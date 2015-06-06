@@ -2924,7 +2924,7 @@ meta.foundation-mq-topbar {
     width: 40px; }
 
 .orbit-container {
-  background: none;
+  background: gray;
   overflow: hidden;
   position: relative;
   width: 100%; }
