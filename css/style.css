@@ -1,0 +1,9 @@
+nav.top-bar {
+text-align:center;
+}
+section.top-bar-section {
+display: inline-block;
+}
+nav.top-bar ul li:hover{
+	background-color: red;
+}

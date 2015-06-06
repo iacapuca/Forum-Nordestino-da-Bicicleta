@@ -1850,7 +1850,9 @@ meta.foundation-mq-topbar {
       padding-left: 0.9375rem;
       padding: 12px 0 12px 0.9375rem;
       text-transform: none;
-      width: 100%; }
+      width: 100%; 
+      text-transform: uppercase;
+    }
       .top-bar-section ul li > a.button {
         font-size: 0.8125rem;
         padding-left: 0.9375rem;
@@ -1859,7 +1861,7 @@ meta.foundation-mq-topbar {
         border-color: #007095;
         color: #FFFFFF; }
         .top-bar-section ul li > a.button:hover, .top-bar-section ul li > a.button:focus {
-          background-color: #007095; }
+          font-color: #007095; }
         .top-bar-section ul li > a.button:hover, .top-bar-section ul li > a.button:focus {
           color: #FFFFFF; }
       .top-bar-section ul li > a.button.secondary {
@@ -1958,10 +1960,10 @@ meta.foundation-mq-topbar {
       color: #FFFFFF;
       background: #222222; }
     .top-bar-section ul li.active > a {
-      background: #008CBA;
+      background: #333333;
       color: #FFFFFF; }
       .top-bar-section ul li.active > a:hover {
-        background: #0078a0;
+        background: #333333;
         color: #FFFFFF; }
   .top-bar-section .has-form {
     padding: 0.9375rem; }
