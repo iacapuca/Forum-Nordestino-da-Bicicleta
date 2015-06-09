@@ -17,12 +17,11 @@ margin-right: auto;
 max-width: initial;
 }
 #centro {
-
-	position:relative;
+    width: 1241px;
 	top:50%;
 	left:20%;
 	margin-top:-50px;
-	margin-left:-50px;
+	margin-left: 0 auto;
 }
 /***** GENERAL & PSEUDO CLASSES *****/
 
