@@ -1842,14 +1842,13 @@ meta.foundation-mq-topbar {
   .top-bar-section ul li {
     background: #333333; }
     .top-bar-section ul li > a {
-      color: #FFFFFF;
+      color: #484747;
       display: block;
-      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-      font-size: 0.8125rem;
-      font-weight: normal;
+      font-family: "Abel";
+      font-size: 1.2rem;
+      font-weight: bold;
       padding-left: 0.9375rem;
       padding: 12px 0 12px 0.9375rem;
-      text-transform: none;
       width: 100%; 
       text-transform: uppercase;
     }
@@ -2042,7 +2041,7 @@ meta.foundation-mq-topbar {
 
 @media only screen and (min-width: 40.0625em) {
   .top-bar {
-    background: #333333;
+    background: #ffec9e;
     overflow: visible; }
     .top-bar:before, .top-bar:after {
       content: " ";
@@ -2092,12 +2091,12 @@ meta.foundation-mq-topbar {
       background: #222222;
       color: #FFFFFF; }
     .top-bar-section li:not(.has-form) a:not(.button) {
-      background: #333333;
+      background: #ffec9e;
       line-height: 2.8125rem;
       padding: 0 0.9375rem; }
       .top-bar-section li:not(.has-form) a:not(.button):hover {
         background-color: #555555;
-        background: #222222; }
+        background: #555555; }
     .top-bar-section li.active:not(.has-form) a:not(.button) {
       background: #008CBA;
       color: #FFFFFF;
@@ -2924,7 +2923,7 @@ meta.foundation-mq-topbar {
     width: 40px; }
 
 .orbit-container {
-  background: gray;
+  background: rgb(242, 242, 242);
   overflow: hidden;
   position: relative;
   width: 100%; }
