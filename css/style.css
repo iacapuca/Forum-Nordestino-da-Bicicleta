@@ -4,10 +4,7 @@ text-align:center;
 section.top-bar-section {
 display: inline-block;
 }
-nav.top-bar ul li:hover{
-	background-color: red;
-}
-.slider-noticias p{
+ider-noticias p{
 
 }
 .fullWidth{
@@ -38,10 +35,10 @@ input:focus{ outline: none; }
 .pad-bottom{ padding-bottom: 66px; }
 
 #loader{ position: absolute; width: 100%; height: 100%; background-color: #fff; z-index: 20000; padding-top: 250px; }
-#progress-bar{ 
-	height: 10px; background-color: #222; 
-	-webkit-transition: all .5s; 
-	transition: all .5s; 
+#progress-bar{
+	height: 10px; background-color: #222;
+	-webkit-transition: all .5s;
+	transition: all .5s;
 	-moz-transition: all .5s;
 	width: 0px;
 }
