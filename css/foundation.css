@@ -2887,7 +2887,7 @@ meta.foundation-mq-topbar {
     -ms-transform: rotate(360deg);
     transform: rotate(360deg); } }
 /* Orbit Graceful Loading */
-.slideshow-wrapper {
+/.slideshow-wrapper {
   position: relative; }
   .slideshow-wrapper ul {
     list-style-type: none;

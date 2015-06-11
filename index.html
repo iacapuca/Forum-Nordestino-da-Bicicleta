@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/foundation.css" />
   <script src="js/vendor/modernizr.js"></script>
   <link rel="stylesheet" href="css/style.css" />
-  <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Abel|Lato:400,700,400italic|Raleway' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -28,20 +28,20 @@
             </li>
           </ul>
           <section class="top-bar-section">
-            <ul>
+            <ul id="subnav">
               <li><a class="smooth-scroll" href="#about">Sobre</a>
               </li>
-              <li><a href="#programacao">Programação</a>
+              <li><a class="smooth-scroll" href="#programacao">Programação</a>
               </li>
-              <li><a href="#inscricoes">Inscrições</a>
+              <li><a class="smooth-scroll" href="#inscricoes">Inscrições</a>
               </li>
-              <li><a href="#faq">FAQ</a>
+              <li><a class="smooth-scroll" href="#faq">FAQ</a>
               </li>
-              <li><a href="#blog">Blog</a>
+              <li><a class="smooth-scroll" href="#blog">Blog</a>
               </li>
-              <li><a href="#conteudo">Conteudo</a>
+              <li><a class="smooth-scroll" href="#conteudo">Conteudo</a>
               </li>
-              <li><a href="#contato">Contato</a>
+              <li><a class="smooth-scroll" href="#contato">Contato</a>
               </li>
             </ul>
           </section>
@@ -52,15 +52,12 @@
   <div class="row">
     <div class="large-12 columns">
       <img src="img/bg.png" id="centro" />
-
-
     </div>
-
-
   </div>
 
 
-
+  <!-- Como o blog ainda não está pronto eu acho melhor suprimir a section de noticias.
+<section id="noticias">
   <div class="row fullWidth">
     <div class="large-12 columns">
 
@@ -89,6 +86,8 @@
       </div>
     </div>
   </div>
+</section>
+-->
   <a id="about"></a>
   <section id="about" class="pad-large">
     <div class="row">
@@ -111,137 +110,117 @@
       </div>
     </div>
   </section>
-  <div class="row">
-    <div class="large-8 medium-8 columns">
-      <h5>Here&rsquo;s your basic grid:</h5>
-      <!-- Grid Example -->
 
-      <div class="row">
-        <div class="large-12 columns">
-          <div class="callout panel">
-            <p>
-              <strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-6 medium-6 columns">
-          <div class="callout panel">
-            <p>Six columns</p>
-          </div>
-        </div>
-        <div class="large-6 medium-6 columns">
-          <div class="callout panel">
-            <p>Six columns</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-4 medium-4 small-4 columns">
-          <div class="callout panel">
-            <p>Four columns</p>
-          </div>
-        </div>
-        <div class="large-4 medium-4 small-4 columns">
-          <div class="callout panel">
-            <p>Four columns</p>
-          </div>
-        </div>
-        <div class="large-4 medium-4 small-4 columns">
-          <div class="callout panel">
-            <p>Four columns</p>
-          </div>
-        </div>
-      </div>
-
-      <hr />
-
-      <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-      <form>
-        <div class="row">
-          <div class="large-12 columns">
-            <label>Input Label</label>
-            <input type="text" placeholder="large-12.columns" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-4 medium-4 columns">
-            <label>Input Label</label>
-            <input type="text" placeholder="large-4.columns" />
-          </div>
-          <div class="large-4 medium-4 columns">
-            <label>Input Label</label>
-            <input type="text" placeholder="large-4.columns" />
-          </div>
-          <div class="large-4 medium-4 columns">
-            <div class="row collapse">
-              <label>Input Label</label>
-              <div class="small-9 columns">
-                <input type="text" placeholder="small-9.columns" />
-              </div>
-              <div class="small-3 columns">
-                <span class="postfix">.com</span>
-              </div>
+  <a id="programacao"></a>
+  <section id="programacao" class="pad-large">
+    <div class="row">
+      <div class="large-12 columns text-center">
+        <div class="page-title">
+          <h1 class="lowlight">Programação</h1>
+          <div class="row">
+            <div class="panel">
+              <p class="lead">
+                À ser definida
+              </p>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="large-12 columns">
-            <label>Select Box</label>
-            <select>
-              <option value="husker">Husker</option>
-              <option value="starbuck">Starbuck</option>
-              <option value="hotdog">Hot Dog</option>
-              <option value="apollo">Apollo</option>
-            </select>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <label>Choose Your Favorite</label>
-            <input type="radio" name="pokemon" value="Red" id="pokemonRed">
-            <label for="pokemonRed">Radio 1</label>
-            <input type="radio" name="pokemon" value="Blue" id="pokemonBlue">
-            <label for="pokemonBlue">Radio 2</label>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <label>Check these out</label>
-            <input id="checkbox1" type="checkbox">
-            <label for="checkbox1">Checkbox 1</label>
-            <input id="checkbox2" type="checkbox">
-            <label for="checkbox2">Checkbox 2</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-12 columns">
-            <label>Textarea Label</label>
-            <textarea placeholder="small-12.columns"></textarea>
-          </div>
-        </div>
-      </form>
-    </div>
-
-    <div class="large-4 medium-4 columns">
-      <h5>Try one of these buttons:</h5>
-      <p><a href="#" class="small button">Simple Button</a>
-        <br/>
-        <a href="#" class="small radius button">Radius Button</a>
-        <br/>
-        <a href="#" class="small round button">Round Button</a>
-        <br/>
-        <a href="#" class="medium success button">Success Btn</a>
-        <br/>
-        <a href="#" class="medium alert button">Alert Btn</a>
-        <br/>
-        <a href="#" class="medium secondary button">Secondary Btn</a>
-      </p>
-      <div class="panel">
-        <h5>So many components, girl!</h5>
-        <p>A whole kitchen sink of goodies comes with Foundation. Checkout the docs to see them all, along with details on making them your own.</p>
-        <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>
       </div>
     </div>
-  </div>
+  </section>
+
+  <a id="inscricoes"></a>
+  <section id="inscricoes" class="pad-large">
+    <div class="row">
+      <div class="large-12 columns text-center">
+        <div class="page-title">
+          <h1 class="lowlight">Inscrições</h1>
+          <div class="row">
+            <div class="panel">
+              <p class="lead">
+                Ainda vão ser abertas
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <a id="contact-scroll"></a>
+
+  <section id="contact">
+
+    <div class="row">
+
+      <div class="large-5 columns">
+        <h4>
+          <span class="highlight">Local</span>.</h4>
+        <ul class="contact-methods">
+          <li>
+            <div class="method-text">
+              <h6>Recife</h6>
+              <span>À ser definido</span>
+            </div>
+          </li>
+
+          <li>
+            <div class="highlight icon icon_calendar"></div>
+            <div class="method-text">
+              <h6>Agende os dias!</h6>
+              <span>29 de Outubro à 01 de Novembro</span>
+            </div>
+          </li>
+
+          <li>
+            <div class="highlight icon icon_mail_alt"></div>
+            <div class="method-text">
+              <h6>e-mail de contato</h6>
+              <span>contato@fnebici.com.br</span>
+            </div>
+          </li>
+
+
+          <li>
+            <div class="highlight icon social_facebook"></div>
+            <div class="method-text">
+              <h6>Curta nossa página no Facebook</h6>
+              <span><a href="https://www.facebook.com/fnebici" target="_black" class="text-magenta">FNEBici</a></span>
+            </div>
+          </li>
+
+
+        </ul>
+      </div>
+
+      <div class="large-7 columns">
+        <h4>
+          <span class="highlight">Comentário</span> envie sua sugestão ou dúvida.</h4>
+        <div class="contact-form">
+          <input type="text" class="highlight" id="form-name" placeholder="Nome:">
+          <input type="text" class="highlight" id="form-email" placeholder="Email:">
+          <input type="text" class="highlight" id="form-msg" placeholder="Mensagem:">
+        </div>
+        <div id="form-button" class="btn send-btn">Enviar
+          <div class="icon arrow_right">&nbsp;</div>
+        </div>
+        <div class="btn reset-btn">Apagar
+          <div class="icon icon_close">&nbsp;</div>
+        </div>
+
+        <div id="form-sent">
+          <p>Comentário recebido!</p>
+        </div>
+        <div id="details-error">
+          <p>* Por favor, preencha todos os campos corretamente.</p>
+        </div>
+      </div>
+
+
+    </div>
+
+  </section>
+  <!--end of contact section-->
 
   <script src="js/vendor/jquery.js"></script>
   <script src="js/foundation.min.js"></script>
