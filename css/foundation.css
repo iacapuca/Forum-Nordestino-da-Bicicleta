@@ -1726,6 +1726,7 @@ meta.foundation-mq-topbar {
   background: #FFEC9E;
   height: 2.8125rem;
   line-height: 2.8125rem;
+    
   margin-bottom: 0;
   overflow: hidden;
   position: relative; }
@@ -1758,6 +1759,7 @@ meta.foundation-mq-topbar {
     position: relative; }
   .top-bar .name {
     font-size: 16px;
+       background-color: #ffec9e;
     height: 2.8125rem;
     margin: 0; }
     .top-bar .name h1, .top-bar .name h2, .top-bar .name h3, .top-bar .name h4, .top-bar .name p, .top-bar .name span {
@@ -1772,7 +1774,7 @@ meta.foundation-mq-topbar {
         width: 75%; }
   .top-bar .toggle-topbar {
     position: absolute;
-    right: 0;
+      right: 0;
     top: 0; }
     .top-bar .toggle-topbar a {
       color: #FFFFFF;
@@ -1788,7 +1790,7 @@ meta.foundation-mq-topbar {
       margin-top: -16px;
       top: 50%; }
       .top-bar .toggle-topbar.menu-icon a {
-        color: #484747;
+        color: #000;
         height: 34px;
         line-height: 33px;
         padding: 0 2.5rem 0 0.9375rem;
@@ -1807,11 +1809,14 @@ meta.foundation-mq-topbar {
           box-shadow: 0 0 0 1px "", 0 7px 0 1px "", 0 14px 0 1px ""; }
   .top-bar.expanded {
     background: transparent;
-    height: auto; }
+    height: auto;
+      position: absolute;
+      text-align: right;
+  }
     .top-bar.expanded .title-area {
       background: #333333; }
     .top-bar.expanded .toggle-topbar a {
-      color: white; }
+      color: #000; }
       .top-bar.expanded .toggle-topbar a span::after {
         box-shadow: 0 0 0 1px #888888, 0 7px 0 1px #888888, 0 14px 0 1px #888888; }
     @media screen and (-webkit-min-device-pixel-ratio: 0) {
@@ -1824,6 +1829,7 @@ meta.foundation-mq-topbar {
 .top-bar-section {
   left: 0;
   position: relative;
+   
   width: auto;
   transition: left 300ms ease-out; }
   .top-bar-section ul {
@@ -1832,7 +1838,8 @@ meta.foundation-mq-topbar {
     height: auto;
     margin: 0;
     padding: 0;
-    width: 100%; }
+    width: 100%;
+  }
   .top-bar-section .divider,
   .top-bar-section [role="separator"] {
     border-top: solid 1px #1a1a1a;
@@ -1840,15 +1847,21 @@ meta.foundation-mq-topbar {
     height: 1px;
     width: 100%; }
   .top-bar-section ul li {
-    background: #333333; }
+    background: #ffec9e;
+          
+  text-align: right; }
+
+#centro{
+padding-top: 120px; /* needfix */
+}
     .top-bar-section ul li > a {
-      color: #484747;
+      color: #000;
       display: block;
       font-family: "Abel";
       font-size: 1.2rem;
       font-weight: bold;
       padding-left: 0.9375rem;
-      padding: 12px 0 12px 0.9375rem;
+      padding: 12px 15px 12px 0.9375rem;
       width: 100%;
       text-transform: uppercase;
     }
@@ -1860,7 +1873,7 @@ meta.foundation-mq-topbar {
         border-color: #007095;
         color: #FFFFFF; }
         .top-bar-section ul li > a.button:hover, .top-bar-section ul li > a.button:focus {
-          font-color: #007095; }
+          color: #007095; }
         .top-bar-section ul li > a.button:hover, .top-bar-section ul li > a.button:focus {
           color: #FFFFFF; }
       .top-bar-section ul li > a.button.secondary {
@@ -2042,7 +2055,7 @@ meta.foundation-mq-topbar {
 @media only screen and (min-width: 40.0625em) {
   .top-bar {
     background: #ffec9e;
-    overflow: visible; }
+    overflow: visible;}
     .top-bar:before, .top-bar:after {
       content: " ";
       display: table; }
@@ -2051,7 +2064,8 @@ meta.foundation-mq-topbar {
     .top-bar .toggle-topbar {
       display: none; }
     .top-bar .title-area {
-      float: left; }
+      float: left;
+    }
     .top-bar .name h1 a,
     .top-bar .name h2 a,
     .top-bar .name h3 a,
@@ -2068,7 +2082,8 @@ meta.foundation-mq-topbar {
       position: relative;
       top: 0.53125rem; }
     .top-bar.expanded {
-      background: #333333; }
+      background: #ffec9e;
+    }
 
   .contain-to-grid .top-bar {
     margin-bottom: 0;
