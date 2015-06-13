@@ -1852,7 +1852,7 @@ meta.foundation-mq-topbar {
   text-align: right; }
 
 #centro{
-padding-top: 120px; /* needfix */
+ /* padding-top: 120px;  needfix */
 }
     .top-bar-section ul li > a {
       color: #000;
