@@ -97,17 +97,15 @@ p {
     width: 0px;
   }
   #contato {
-    background: #2e2e2e;
     position: relative;
-    background: url('img/ccsp1.jpg');
-    background-size: cover;
+    background-image: url("img/footer-image.jpg");
+
   }
   #contact:before {
     position: absolute;
     width: 100%;
     height: 100%;
     content: '';
-    background-color: #222;
     opacity: 0.95;
   }
   #contact .row {
@@ -117,7 +115,6 @@ p {
     height: 80px;
   }
   #contact input {
-    background: none;
     border: none;
     border-bottom: 3px solid #777;
     display: inline-block;
@@ -207,4 +204,7 @@ p {
     color: #575757;
     font-size: 14px;
   }
+
+
+
 
