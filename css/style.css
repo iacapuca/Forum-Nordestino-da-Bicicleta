@@ -5,12 +5,23 @@ body {
   padding: 40px 15px;
   text-align: center;
 }
+
+
 /* navigation */
 .navbar {
   margin:0 auto;
   text-align: center;
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
+}
+@media (min-width: 768px){
+  .navbar-nav {
+    /* float: left; */
+    text-align: center;
+    margin: 0 auto;
+    float: none;
+    width: 690px;
+  }
 }
 .navbar-inverse {
   background-color: #ffec9e;
@@ -24,19 +35,41 @@ body {
   font-weight: bold;
   color: #235389;
   background: none;
+    
 }
 .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
   color: #235389;
+        text-decoration: underline;
 }
+
+.navbar-inverse .navbar-brand {
+  /* color: #9d9d9d; */
+}
+
 
 
 /* jumbotron */
 .header{
   background: url('../img/header.png') no-repeat center;
+  background-size: contain;
   height: 500px;
+      margin-top: -50px;
 }
 .jumbotron {
   text-align: center;
+
+}
+
+/* rodape */
+.rodape {
+  background: url('../img/footer-image2.png') no-repeat center;
+/*  background-position: bottom;*/
+  background-size: cover;
+  height: 500px;
+}
+.rodape h1,.rodape h2, .rodape h3{
+  color: #ffec9e;
+    text-align: left;
 }
 
 /* fonts */
@@ -51,4 +84,35 @@ body {
 .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
   text-align: center;
 
+}
+
+.form-horizontal {
+    
+}
+
+.form-control {
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0px;
+    font-weight: bold;
+    color: #fff;
+    border: 2px  solid #ffec9e;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    
+}
+
+
+
+.btn {
+    border-radius: 0;
+    border-color: #ffec9e;
+    background-color: #ffec9e;
+    color: #000;
+}
+
+.btn:hover{
+    background-color: #f0dc8c;
+    border-color: #ffec9e;
 }
