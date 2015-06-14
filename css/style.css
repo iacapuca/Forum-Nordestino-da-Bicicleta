@@ -1,7 +1,54 @@
 body {
   padding-top: 50px;
 }
-.starter-template {
+.secao {
   padding: 40px 15px;
   text-align: center;
+}
+/* navigation */
+.navbar {
+  margin:0 auto;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+}
+.navbar-inverse {
+  background-color: #ffec9e;
+  border: none;
+}
+.navbar-inverse .navbar-nav>li>a {
+  color: #333;
+}
+
+.navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>.active>a , .navbar-inverse .navbar-nav>.active>a:hover{
+  font-weight: bold;
+  color: #235389;
+  background: none;
+}
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+  color: #235389;
+}
+
+
+/* jumbotron */
+.header{
+  background: url('../img/header.png') no-repeat center;
+  height: 500px;
+}
+.jumbotron {
+  text-align: center;
+}
+
+/* fonts */
+.jumbotron h1, h1{
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-size: 2.75em;
+}
+
+
+/* table */
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+  text-align: center;
+
 }
