@@ -63,7 +63,7 @@ body ::-moz-selection {
 .navbar-inverse .navbar-nav>li>a:focus,
 .navbar-inverse .navbar-nav>li>a:hover {
     color: #ffffff;
-    background: #363232;
+    background: #6D6E71;
 }
 
 .navbar-inverse .navbar-brand {
