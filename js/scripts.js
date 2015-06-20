@@ -6,4 +6,7 @@ $('.smooth-scroll').smoothScroll({
 });
 
 //Easy Tabs
-$('#tab-container').easytabs();
+$('#tab-container').easytabs({
+	animate: true,
+	animationSpeed: 1000,
+});
