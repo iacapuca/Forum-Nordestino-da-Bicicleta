@@ -17,6 +17,7 @@
         <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <!-- Custom Styles -->
         <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="css/bicycle.css">
         <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
         <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
         <script src="js/ie-emulation-modes-warning.js"></script>
@@ -59,6 +60,8 @@
 </div>
 </nav>
 <div class="jumbotron header">
+<!-- Illustration inspiration by Dennis de Groot -->  
+</div>
 <!-- logo -->
 <div class="container">
 </div>
@@ -126,6 +129,25 @@
 <!-- inscricoes -->
 <div class="jumbotron">
 <div class="container">
+<div id="tab-container" class="tab-container">
+  <ul class='etabs'>
+    <li class='tab'><a href="#tabs1-html">HTML Markup</a></li>
+    <li class='tab'><a href="#tabs1-js">Required JS</a></li>
+    <li class='tab'><a href="#tabs1-css">Example CSS</a></li>
+  </ul>
+  <div id="tabs1-html">
+    <h2>HTML Markup for these tabs</h2>
+    <!-- content -->
+  </div>
+  <div id="tabs1-js">
+    <h2>JS for these tabs</h2>
+    <!-- content -->
+  </div>
+  <div id="tabs1-css">
+    <h2>CSS Styles for these tabs</h2>
+    <!-- content -->
+  </div>
+</div>
 <h1>Inscrições</h1>
 <p class="lead">Ainda vão ser abertas.</p>
 <section class="subscribe">
@@ -206,9 +228,9 @@
 <div class="row">
 <div class="col-md-6">
 <!-- rodape -->
-<h1>Local</h1>
 <div class="col-md-4">
 <ul class="fa-ul marcadores">
+<li><h4>Local</h4></li>
 <li>
     <i class="fa-li fa fa-map-marker fa-4x"></i>
     <div class="method-text">
@@ -227,8 +249,8 @@
 <li>
     <i class="fa-li fa fa-envelope-o fa-4x"></i>
     <div class="method-text">
-        <h6>e-mail de contato</h6>
-        <span>contato em cryptorave.org</span>
+        <h6>E-mail de contato</h6>
+        <span>contato@fnebici.com.br</span>
     </div>
 </li>
 </ul>
@@ -269,6 +291,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.smooth-scroll.js"></script>
+<script src="js/jquery.ba-hashchange.min.js"></script>
+<script src="js/jquery.easytabs.js"></script>
 <script src="js/scripts.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
