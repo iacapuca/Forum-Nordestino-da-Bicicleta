@@ -159,6 +159,7 @@ h1 {
 .btn:hover {
     background-color: #f0dc8c;
     border-color: #ffec9e;
+    color: #000000;
 }
 
 /* Subscribe */
