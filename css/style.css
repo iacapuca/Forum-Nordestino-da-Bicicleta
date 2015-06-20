@@ -19,7 +19,6 @@ body ::-moz-selection {
     background: #FCCB48;  
 /*    background: #235389;*/
 }
-
 /* navigation */
 
 .navbar {
@@ -90,13 +89,22 @@ body ::-moz-selection {
     /*  background-position: bottom;*/
     
     background-size: cover;
-    height: 500px;
+    height: 800px;
+    margin-bottom: 0px;
 }
 
 .rodape h1,
 .rodape h2,
-.rodape h3 {
+.rodape h3,
+.rodape h6 {
     color: #ffec9e;
+    text-align: left;
+
+}
+
+.rodape h4{
+    color: #ddd;
+    font-size: 18px;
     text-align: left;
 }
 /* fonts */
@@ -214,3 +222,24 @@ h1 {
 .lt-ie9 .subscribe-input {
     line-height: 33px;
 }
+
+.marcadores {
+    color: white;
+}
+.fa-li{
+    width: 15px;
+    font-size: 42px;
+    display: inline-block;
+    -webkit-backface-visibility: hidden;
+
+}
+.bicicletas{
+    zoom: 0.3; 
+}
+.etabs { margin: 0; padding: 0; }
+.tab { display: inline-block; zoom:1; *display:inline; background: #eee; border: solid 1px #999; border-bottom: none; -moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; }
+.tab a { font-size: 14px; line-height: 2em; display: block; padding: 0 10px; outline: none; }
+.tab a:hover { text-decoration: underline; }
+.tab.active { background: #fff; padding-top: 6px; position: relative; top: 1px; border-color: #666; }
+.tab a.active { font-weight: bold; }
+.tab-container .panel-container { background: #fff; border: solid #666 1px; padding: 10px; -moz-border-radius: 0 4px 4px 4px; -webkit-border-radius: 0 4px 4px 4px; }
