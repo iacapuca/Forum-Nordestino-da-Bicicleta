@@ -255,4 +255,6 @@ float:left;
 }
 
 
-/* Botão de Share */
+.entidades ul span{
+    padding: 1em;
+}
