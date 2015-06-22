@@ -2,6 +2,10 @@ body {
     padding-top: 50px;
 }
 
+.bicicletas{
+    overflow-x:hidden;
+    width: 100%;
+}
 .secao {
     padding: 40px 15px;
     text-align: center;
