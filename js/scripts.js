@@ -10,3 +10,5 @@ $('#tab-container').easytabs({
 	animate: true,
 	animationSpeed: 1000,
 });
+
+//Share
