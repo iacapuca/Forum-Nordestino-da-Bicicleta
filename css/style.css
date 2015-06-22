@@ -1,6 +1,6 @@
 body {
     padding-top: 50px;
-    overflow: hidden;
+    font-family: "Lato";
 }
 
 .secao {
@@ -255,4 +255,6 @@ float:left;
 }
 
 
-/* Botão de Share */
+.entidades ul span{
+    padding: 1em;
+}
