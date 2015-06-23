@@ -1,6 +1,7 @@
 body {
     padding-top: 50px;
     font-family: "Lato";
+    overflow-x: hidden;
 }
 
 .secao {
@@ -8,17 +9,19 @@ body {
     text-align: center;
 }
 
-body ::selection {
-/*WebKit/Blink Browsers */
-    background: #FCCB48;  
-/*    background: #86C43F; */
-/*  to-do */
+body::selection {
+    /*WebKit/Blink Browsers */
     
+    background: #FCCB48;
+    /*    background: #86C43F; */
+    /*  to-do */
 }
-body ::-moz-selection {
-/*    geko Browsers */
-    background: #FCCB48;  
-/*    background: #235389;*/
+
+body::-moz-selection {
+    /*    geko Browsers */
+    
+    background: #FCCB48;
+    /*    background: #235389;*/
 }
 /* navigation */
 
@@ -29,7 +32,7 @@ body ::-moz-selection {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.25em;
-     box-shadow: 0px 2px 5px rgba(136, 136, 136, 0.29);
+    box-shadow: 0px 2px 5px rgba(136, 136, 136, 0.29);
 }
 
 @media (min-width: 768px) {
@@ -72,17 +75,15 @@ body ::-moz-selection {
 /* jumbotron */
 
 .jumbotron {
-  text-align: center;
-
-  
+    text-align: center;
 }
+
 .header {
     background: url('../img/header.png') no-repeat center;
     background-size: contain;
     height: 500px;
     margin-top: -50px;
 }
-
 /* rodape */
 
 .rodape {
@@ -100,33 +101,30 @@ body ::-moz-selection {
 .rodape h6 {
     color: #ffec9e;
     font-weight: bold;
-    padding-top:10px;
+    padding-top: 10px;
     text-align: left;
-
 }
-.rodape h3{
+
+.rodape h3 {
     font-size: 1.3em;
     font-family: "Lato";
     text-transform: uppercase;
     font-weight: bold;
 }
 
-
-.rodape h4{
-     font-family: 'Raleway', sans-serif;
+.rodape h4 {
+    font-family: 'Raleway', sans-serif;
     font-size: 28px;
     text-align: left;
-      margin: 30px 0 0 -90px;
-
+    margin: 30px 0 0 -90px;
 }
-.rodape h2{
- font-family: 'Raleway', sans-serif;
-     text-transform: uppercase;
+
+.rodape h2 {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
     font-weight: bold;
     font-size: 1.6em
 }
-
-
 /* fonts */
 
 .jumbotron h1,
@@ -172,8 +170,8 @@ h1 {
     border-color: #ffec9e;
     color: #000000;
 }
-
 /* Subscribe */
+
 .subscribe {
     margin: 20px auto 0;
     padding: 20px;
@@ -248,24 +246,23 @@ h1 {
     color: white;
 }
 
-.fa-li{
+.fa-li {
     width: 15px;
     font-size: 42px;
     display: inline-block;
     -webkit-backface-visibility: hidden;
-
 }
 
-ul.fa-ul.marcadores li{
-padding-bottom:50px;
+ul.fa-ul.marcadores li {
+    padding-bottom: 50px;
     margin-left: 150px;
 }
-ul.fa-ul.marcadores span{
-float:left;
+
+ul.fa-ul.marcadores span {
+    float: left;
     text-align: left;
 }
 
-
-.entidades ul span{
-    padding: 1em;
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #000;
 }

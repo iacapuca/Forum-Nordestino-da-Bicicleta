@@ -11,4 +11,7 @@ $('#tab-container').easytabs({
 	animationSpeed: 1000,
 });
 
-//Share
+//Dropwdown
+$(".navbar-collapse a").click(function() {
+    $(this).closest(".navbar-collapse collapse").prev().dropdown("toggle");
+});
