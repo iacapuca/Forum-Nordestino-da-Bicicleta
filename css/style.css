@@ -104,6 +104,13 @@ body ::-moz-selection {
     text-align: left;
 
 }
+.rodape h3{
+    font-size: 1.3em;
+    font-family: "Lato";
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 
 .rodape h4{
      font-family: 'Raleway', sans-serif;
@@ -114,7 +121,11 @@ body ::-moz-selection {
 }
 .rodape h2{
  font-family: 'Raleway', sans-serif;
+     text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.6em
 }
+
 
 /* fonts */
 
