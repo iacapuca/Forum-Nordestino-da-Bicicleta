@@ -15,3 +15,7 @@ $('#tab-container').easytabs({
 $(".navbar-collapse a").click(function() {
     $(this).closest(".navbar-collapse collapse").prev().dropdown("toggle");
 });
+
+$('.navbar-collapse collapse in').find("a").not('.navbar-toggle').on("click",function(e){
+    e.stopImmediatePropagation();
+});
