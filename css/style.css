@@ -266,3 +266,23 @@ ul.fa-ul.marcadores span {
 .navbar-inverse .navbar-toggle .icon-bar {
     background-color: #000;
 }
+
+
+@media (max-width: 768px) {
+    ::-webkit-input-placeholder {
+        color: #f00;
+    }
+    ::-moz-placeholder {
+        color: #f00;
+    }
+    /* firefox 19+ */
+    
+    :-ms-input-placeholder {
+        color: #f00;
+    }
+    /* ie */
+    
+    input:-moz-placeholder {
+        color: #f00;
+    }
+}
