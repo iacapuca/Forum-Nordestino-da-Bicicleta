@@ -38,6 +38,9 @@
     <!-- Custom Styles -->
     <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/bicycle.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="js/ie-emulation-modes-warning.js"></script>
@@ -161,7 +164,7 @@
     <!-- /.container -->
     <a id="inscricoes"></a>
     <!-- inscricoes -->
-    <div class="jumbotron">
+    <div class="jumbotron" style="margin-bottom: 0px;">
         <div class="container">
             <h1>Inscrições</h1>
             <p class="lead">Ainda vão ser abertas.</p>
@@ -177,60 +180,80 @@
         </div>
         <!-- /.container -->
     </div>
+    <!-- FAQ -->
+    <a id="faq"></a>
+    <div class="secao">
+        <h1>FAQ</h1>
+        <div class="col-sm-1 col-md-4">
+            <h1>mapa</h1>
+            <div id="map" style="height: 350px"></div>
+
+        </div>
+        <div class="col-sm-1 col-md-4">
+            <h1>hospedagem</h1>
+        </div>
+        <div class="col-sm-1 col-md-4">
+            <h1>info</h1>
+        </div>
+    </div>
+    <div class="container">
+    </div>
     <!-- fim inscrição -->
     <a id="organizacao"></a>
     <!-- entidades organizadoras -->
-    <div class="container">
-        <div class="secao">
-            <div class="text-center">
-                <h1>Entidades Organizadoras</h1>
-                <div class="row">
-                    <ul class="entidades" align="center">
-                        <span>
+    <div class="jumbotron" style="margin-bottom:0px; margin-top:10px;">
+        <div class="container">
+            <div class="secao">
+                <div class="text-center">
+                    <h1>Entidades Organizadoras</h1>
+                    <div class="row">
+                        <ul class="entidades" align="center">
+                            <span>
     <a href="http://www.ameciclo.org/">
         <img alt="AMECiclo" src="img/ameciclo_logo.png" />
     </a>
 </span>
-                        <span>
+                            <span>
     <a href="http://www.ciclourbano.org.br/">
         <img alt="Ciclourbano" src="img/ciclourbano_logo.jpeg" width="120px" height="120px" />
     </a>
 </span>
-                        <span>
+                            <span>
     <a href="http://acirn.blogspot.com.br/">
         <img alt="ACIRN" src="img/acirn_logo.png" width="120px" height="120px" />
     </a>
 </span>
-                        <span>
+                            <span>
     <a href="https://mobicidadessa.wordpress.com/">
         <img alt="Mobicidade" src="img/mobicidade_logo.jpg" width="175px" height="120px" />
     </a>
 </span>
-                        <span>
+                            <span>
     <a href="https://www.facebook.com/CiclovidaFortaleza">
         <img alt="Ciclovida" src="img/ciclovida_logo.jpg" width="120px" height="120px" />
     </a>
 </span>
-                    </ul>
-                    <div class="text center">
-                        <h1>Apoiadores</h1>
-                        <div class="row">
-                            <ul align="center">
-                                <span>
+                        </ul>
+                        <div class="text center">
+                            <h1>Apoiadores</h1>
+                            <div class="row">
+                                <ul align="center">
+                                    <span>
             <a href="http://www.uniaodeciclistas.org.br/">
                 <img alt="UCB" src="img/ucb_logo.gif" width="200px" height="120px" />
             </a>
         </span>
-                                <span>
+                                    <span>
             <a href="http://bikeanjo.org/">
                 <img alt="Bike Anjo" src="img/bikeanjo_logo.jpg" width="120px" height="120px" />
             </a>
         </span>
-                            </ul>
+                                </ul>
+                            </div>
                         </div>
                     </div>
+                    <!-- fim da row dos apoiadores -->
                 </div>
-                <!-- fim da row dos apoiadores -->
             </div>
             <!-- fim da div de pi -->
         </div>
@@ -323,6 +346,7 @@
     <script src="js/jquery.easytabs.js"></script>
     <script src="js/scripts.js"></script>
     <script src='js/share.min.js'></script>
+
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
