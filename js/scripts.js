@@ -5,11 +5,7 @@ $('.smooth-scroll').smoothScroll({
     offset: -68
 });
 
-//Easy Tabs
-$('#tab-container').easytabs({
-    animate: true,
-    animationSpeed: 1000,
-});
+// Tabs
 
 //Map
 // create a map in the "map" div, set the view to a given place and zoom
