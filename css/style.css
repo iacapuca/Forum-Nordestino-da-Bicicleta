@@ -454,6 +454,7 @@ button.expand:hover {
     position: relative;
   }
 
+
   .event:first-child .talk-speaker, .event:first-child .time{
     padding-top: 3em;
   }
@@ -586,4 +587,95 @@ button.expand:hover {
     position: relative;
     margin-top: 2250px
   }
+
+/* CORRENTE */
+.chain {
+  position: relative;
+  clear: both;
+}
+
+.chain-link {
+  position: relative;
+  width: 4em;
+  height: 1.6em;
+  margin: 0.8em auto 0 auto;
+  overflow: hidden;
+}
+.chain-link:nth-child(odd) {
+  z-index: 0;
+}
+.chain-link:nth-child(even) {
+  z-index: -1;
+}
+
+.disk {
+  position: relative;
+  width: 1.6em;
+  height: 1.6em;
+  border-radius: 50%;
+  background: #979797;
+}
+.disk:nth-child(odd) {
+  float: left;
+  box-shadow: 0px 0 0px #979797 inset, 0px 0 0px #979797 inset, 0px 0 0px #979797 inset, 0 0px 0px rgba(255, 255, 255, 0.5) inset, 0px 0px 0px rgba(0, 0, 0, 0.4) inset;
+}
+.disk:nth-child(even) {
+  float: right;
+  box-shadow: 0px 0 0px #979797 inset, 0px 0 0px #979797 inset, 0px 0 0px #979797 inset, 0 0px 0px rgba(255, 255, 255, 0.5) inset, 0px 0px 0px rgba(0, 0, 0, 0.4) inset;
+}
+.disk:before {
+  content: '';
+  display: block;
+  width: 0.8em;
+  height: 0.8em;
+  border-radius: 50%;
+  position: absolute;
+  top: 0.4em;
+  left: 0.4em;
+  background: #979797;
+  box-shadow: 0px 0 0px rgba(255, 255, 255, 0.2), 0px 0 0px rgba(255, 255, 255, 0.2), 0 0px 0px rgba(255, 255, 255, 0.2), 0 0px 0px rgba(0, 0, 0, 0.4), 0 0 0px black inset;
+}
+.disk:after {
+  content: '';
+  display: block;
+  width: 0.4em;
+  height: 0.4em;
+  border-radius: 50%;
+  position: absolute;
+  top: 0.6em;
+  left: 0.6em;
+  background: #737373;
+  box-shadow: 0px 0 0px rgba(255, 255, 255, 0.2), 0px 0 0px rgba(255, 255, 255, 0.2), 0 0px 0px rgba(255, 255, 255, 0.2), 0 0px 0px rgba(0, 0, 0, 0.4), 0 0 0px black inset;
+}
+
+.junction {
+  position: absolute;
+  top: 0.10718em;
+  left: 0.8em;
+  width: 2.4em;
+  height: 1.38564em;
+  background: #979797;
+}
+.junction:before {
+  content: '';
+  display: block;
+  width: 3.2em;
+  height: 3.2em;
+  position: absolute;
+  top: -2.98564em;
+  left: -0.4em;
+  background: #d5d5d5;
+  border-radius: 50%;
+}
+.junction:after {
+  content: '';
+  display: block;
+  width: 3.2em;
+  height: 3.2em;
+  position: absolute;
+  top: 1.17128em;
+  left: -0.4em;
+  background: #d5d5d5;
+  border-radius: 50%;
+}
 
