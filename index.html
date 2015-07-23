@@ -41,6 +41,8 @@
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
     <link rel="stylesheet" href="css/leaflet-routing-machine.css" />
     <link rel="stylesheet" href="css/Control.Geocoder.css" />
+    <link rel="stylesheet" href="css/fontello.css" />
+    <link rel="stylesheet" href="css/timeline.css" />
     <!-- Inicio do Google Analytics -->
     <script>
         (function (i, s, o, g, r, a, m) {
@@ -114,7 +116,7 @@
     <!-- sobre -->
     <div class="jumbotron">
         <div class="container">
-            <h1>Sobre</h1>
+            <h1 class="title">Sobre</h1>
             <p class="lead">Entre os dias <strong>29 de outubro e 01 de novembro</strong> de 2015, no <strong>Ginásio Pernambucano</strong>, em Recife, será realizado, o <strong>I Forum Nordestino da Bicicleta</strong> que trará palestras, oficinas, rodas de discussão, Bike Polo, apresentação de trabalhos academicos e cases de empreedendorismo relacionados com a bicicleta.
                 <br>
                 <br> A participação das atividades é <strong>aberta</strong> mediante a inscrição online gratuita.</p>
@@ -126,235 +128,188 @@
     <!-- programação -->
     <div class="container">
         <div class="secao">
-            <h1>Programação</h1>
-            <div class="tabbable">
-                <ul class="nav nav-tabs">
-                    <li class="active"><a href="#quinta" data-toggle="tab">Quinta 29/10</a>
-                    </li>
-                    <li><a href="#sexta" data-toggle="tab">Sexta 30/10</a>
-                    </li>
-
-                    <li><a href="#sabado" data-toggle="tab">Sabado 31/10</a>
-                    </li>
-
-                    <li><a href="#domingo" data-toggle="tab">Domingo 01/11</a>
-                    </li>
-
-                </ul>
-                <div class="tab-content">
-                    <div class="tab-pane active fade in" id="quinta">
-
-                        <!-- Inicio do Teste -->
-                        <div id="day-one">
-
-                            <div class="day-title">Quinta, 29 de Outubro</div>
-                            <div class="event">
-                                <div class="time"><span class="time-entity">14:00 – 16:00</span>
-                                </div>
-                                <div class="talk-speaker">
-                                    <div class="speaker-talk-title">Inscrição e Cadastramento</div>
-                                </div>
-                            </div>
-
-                            <div class="event">
-                                <div class="time"><span class="time-entity">20:00 – 23:00</span>
-                                </div>
-                                <div class="talk-speaker">
-                                    <div class="speaker-talk-title">Palestra de abertura e Cine Pedal</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="day-title">Sexta, 30 de Outubro</div>
-                        <div class="event">
-                            <div class="time"><span class="time-entity">08:00 – 10:00</span>
-                            </div>
-                            <div class="talk-speaker">
-                                <div class="speaker-talk-title">Oficina e Roda de Dialogo</div>
-                            </div>
-                        </div>
-
-                        <div class="event">
-                            <div class="time"><span class="time-entity">14:00 – 17:00</span>
-                            </div>
-                            <div class="talk-speaker">
-                                <div class="speaker-talk-title">Palestra e Mesa Redonda</div>
-                            </div>
-                        </div>
-                        <div class="event">
-                            <div class="time"><span class="time-entity">20h</span>
-                            </div>
-                            <div class="talk-speaker">
-                                <div class="speaker-talk-title">Massa Critica</div>
-                            </div>
-                        </div>
-                        <div class="day-title">Sabado, 31 de Outubro</div>
-                        <div class="event">
-                            <div class="time"><span class="time-entity">08:00 – 10:00</span>
-                            </div>
-                            <div class="talk-speaker">
-                                <div class="speaker-talk-title">Palestra e Mesa Redonda</div>
-                            </div>
-                        </div>
-
-                        <div class="event">
-                            <div class="time"><span class="time-entity">14:00 – 17:00</span>
-                            </div>
-                            <div class="talk-speaker">
-                                <div class="speaker-talk-title">Oficina e Roda de Dialogo</div>
-                            </div>
-                        </div>
-                        <div class="event">
-                            <div class="time"><span class="time-entity">20h</span>
-                            </div>
-                            <div class="talk-speaker">
-                                <div class="speaker-talk-title">Pedale o Som</div>
-                            </div>
-                        </div>
-                        <div class="day-title">Domingo, 01 de Novembro</div>
-                        <div class="event">
-                            <div class="time"><span class="time-entity">08:00 – 10:00</span>
-                            </div>
-                            <div class="talk-speaker">
-                                <div class="speaker-talk-title">Pedal Cultural</div>
-                            </div>
-                        </div>
-
-                        <div class="event">
-                            <div class="time"><span class="time-entity">14:00 – 17:00</span>
-                            </div>
-                            <div class="talk-speaker">
-                                <div class="speaker-talk-title">Roda de Diálogo</div>
-                            </div>
-                        </div>
-                        <div class="event">
-                            <div class="time"><span class="time-entity">20h</span>
-                            </div>
-                            <div class="talk-speaker">
-                                <div class="speaker-talk-title">Encerramento</div>
-                            </div>
-                        </div>
-                        <!-- Fim do Teste -->
-
+            <h1 class="title">PROGRAMAÇÃO</h1>
+            <!-- Inicio da Programação -->
+            <ul class="cbp_tmtimeline">
+                <li>
+                    <time class="cbp_tmtime" datetime="09:00"><span>15 minutos</span> <span>09:00</span>
+                    </time>
+                    <div class="cbp_tmicon timeline_icon_break"></div>
+                    <div class="cbp_tmlabel">
+                        <h2><span>Enchendo o tanque</span>Café da manhã (incluso)</h2>
+                        <p>Nada melhor do que começar o dia com um lanche e um café saboroso. Uma simples preparação para que nada atrapalhe o dinamismo do workshop, nem mesmo aquela fome matinal. Aproveite para realizar um networking e conhecer os outros integrantes do workshop.</p>
                     </div>
-                    <div class="tab-pane fade in" id="sexta">
-                        <div class="day-title">Sexta, 30 de Outubro</div>
-                        <div class="event">
-                            <div class="time"><span class="time-entity">08:00 – 10:00</span>
-                            </div>
-                            <div class="talk-speaker">
-                                <div class="speaker-talk-title">Oficina e Roda de Dialogo</div>
-                            </div>
-                        </div>
+                </li>
+                <li>
+<time class="cbp_tmtime" datetime="09:15"><span>45 minutos</span> <span>09:15</span></time>
+<div class="cbp_tmicon timeline_icon_test"></div>
+<div class="cbp_tmlabel">
+<div class="pull-right hidden-xs">Apresentador <strong>Alan Hoffmeister</strong><img src="/public/img/alan-hoffmeister.jpeg" alt="" class="img-circle speaker"></div>
+<h2><span>node ./hello-world.js</span>Hello World</h2>
+<p>A primeira coisa que vamos aprender será sobre as ferramentas que a plataforma nos disponibiliza, sobre o npm e como executar todos os códigos que iremos construir durante o workshop. Também teremos um pouco de teoria e informações adicionais desta plataforma, mas o foco do workshop é o código!</p>
+</div>
+</li>
+                <li>
+<time class="cbp_tmtime" datetime="09:00"><span>1 hora</span> <span>10:00</span></time>
+<div class="cbp_tmicon timeline_icon_audio"></div>
+<div class="cbp_tmlabel">
+<h2><span>Por partes...</span>Módulos e dependências</h2>
+<p>Qualquer projeto criado com o Node.js pode ficar extenso, modularizar o seu código em partes é o jeito mais fácil de deixar o projeto fácil de manter. Vamos aprender também como instalar dependências em nossos projetos para não precisar reinventar a roda e aproveitar tudo o que já foi criado com o Node.js.</p>
+</div>
+</li>
+<li>
+<time class="cbp_tmtime" datetime="10:00"><span>1 hora</span> <span>11:00</span></time>
+<div class="cbp_tmicon timeline_icon_test"></div>
+<div class="cbp_tmlabel">
+<h2><span>Expandindo os horizontes</span>Eventos</h2>
+<p>O primeiro contato com código assíncrono de verdade! Vamos entender um pouco sobre o controle de fluxo responsável por organizar o coração do Node.js e, é claro, construir algo utilizando tudo o que acabamos de aprender.</p>
+</div>
+</li>
+<li>
+<time class="cbp_tmtime" datetime="12:00"><span>1 hora</span> <span>12:00</span></time>
+<div class="cbp_tmicon timeline_icon_break"></div>
+<div class="cbp_tmlabel">
+<h2><span>Alimentação</span>Almoço (não incluso)</h2>
+<p>É hora de parar, alimentar-se e relaxar um pouco. Aproveite para digerir também um pouco da informação que você recebeu até o momento e tire dúvidas com o apresentador do workshop.</p>
+</div>
+</li>
+<li>
+<time class="cbp_tmtime" datetime="13:00"><span>1 hora</span> <span>13:00</span></time>
+<div class="cbp_tmicon timeline_icon_doc"></div>
+<div class="cbp_tmlabel">
+<h2><span>Hey I just met you, and this is crazy!</span>Callbacks</h2>
+<p>Conforme aprendemos a lidar com a programação assíncrona, podemos notar que a quantidade de lógica necessária para realizar estas operações é sufocante, porém este quadro pode ser amenizado utilizando uma simples técnica que facilita e muito a vida de programadores da plataforma: os callbacks. Muitos não conseguem entendê-los e até desistem de programar para Node.js neste ponto, porém iremos analisar e aprender de forma fácil como utilizar esta metodologia.</p>
+</div>
+</li>
+<li>
+<time class="cbp_tmtime" datetime="14:00"><span>1 hora</span> <span>14:00</span></time>
+<div class="cbp_tmicon timeline_icon_doc"></div>
+<div class="cbp_tmlabel">
+<h2><span>Eu prometo!</span>Promises</h2>
+<p>Nem eventos nem callbacks. Existe uma solução mais fácil para controlar o fluxo da sua aplicação. As Promises são o canivete suido do Node.js, pode parecer um pouco complicado de aprender e utilizar, porém os benefícios desta aprendizagem podem transformar um método desconhecido em uma poderosa ferramenta para toda sua aplicação.</p>
+</div>
+</li>
+<li>
+<time class="cbp_tmtime" datetime="15:00"><span>45 minutos</span> <span>15:00</span></time>
+<div class="cbp_tmicon timeline_icon_test"></div>
+<div class="cbp_tmlabel">
+<h2><span>Não faça isso</span>Antipadrões</h2>
+<p>Quando chegarmos a essa parte, vocês perceberão que a plataforma não impõem padrões, limites ou metodologias forçadas. Por um lado isto é perfeito pois podemos construir muitas coisas interessantes e funcionais. Por outro, a falta de padrões pode ocasionar problemas a médio e longo prazo no desenvolvimento dos seus programas. Por isso é importante aprender a como não fazer as coisas de um jeito errado e evitar que vocês percam tempo refatorando, debugando ou tentando entender algum erro.</p>
+</div>
+</li>
+<li>
+<time class="cbp_tmtime" datetime="15:45"><span>15 minutos</span> <span>15:45</span></time>
+<div class="cbp_tmicon timeline_icon_break"></div>
+<div class="cbp_tmlabel">
+<h2><span>Pausa</span>coffee break (incluso)</h2>
+<p>Mais uma pequena pausa para arejar as ideias, provar um coffee break excelente e conversar sobre o workshop com os outros participantes. Aproveite para discutir dúvidas e opiniões sobre este workshop.</p>
+</div>
+</li>
+<li>
+<time class="cbp_tmtime" datetime="16:00"><span>90 minutos</span> <span>16:00</span></time>
+<div class="cbp_tmicon timeline_icon_test"></div>
+<div class="cbp_tmlabel">
+<h2><span>Mão na massa!</span>Escrevendo código</h2>
+<p>Ao longo do workshop muita coisa será aprendida e muito código será escrito, porém de nada adiantará tudo isso se não formos capazes de criar algo concreto utilizando o Node.js. Utilizaremos eventos, callbacks e promises juntamente com os recursos do core da plataforma para escrever uma aplicação e treinar tudo o que aprendemos até agora. Este é o momento certo para realizar operações nos arquivos de sistema, sockets, protocolos de comunicação HTTP/S, compactação, entre outras coisas que o Node.js pode fazer nativamente!</p>
+</div>
+</li>
+<li>
+<time class="cbp_tmtime" datetime="17:30"><span>30 minutos</span> <span>17:30</span></time>
+<div class="cbp_tmicon timeline_icon_audio"></div>
+<div class="cbp_tmlabel">
+<h2><span>Finalização</span>Encerramento</h2>
+<p>Vamos esclarecer as últimas dúvidas, revisar nosso código e nos despedir. Agora é a hora perfeita para expressar sua opinião sobre o workshop juntamente com o apresentador.</p>
+</div>
+</li>
 
-                        <div class="event">
-                            <div class="time"><span class="time-entity">14:00 – 17:00</span>
-                            </div>
-                            <div class="talk-speaker">
-                                <div class="speaker-talk-title">Palestra e Mesa Redonda</div>
-                            </div>
-                        </div>
-                        <div class="event">
-                            <div class="time"><span class="time-entity">20h</span>
-                            </div>
-                            <div class="talk-speaker">
-                                <div class="speaker-talk-title">Massa Critica</div>
-                            </div>
-                        </div>
+                <div class="day-title">Quinta, 29 de Outubro</div>
+                <div class="event">
+                    <div class="time"><span class="time-entity">14:00 – 16:00</span>
                     </div>
-                    <div class="tab-pane fade in" id="sabado">
-                        <div class="day-title">Sabado, 31 de Outubro</div>
-                        <div class="event">
-                            <div class="time"><span class="time-entity">08:00 – 10:00</span>
-                            </div>
-                            <div class="talk-speaker">
-                                <div class="speaker-talk-title">Palestra e Mesa Redonda</div>
-                            </div>
-                        </div>
-
-                        <div class="event">
-                            <div class="time"><span class="time-entity">14:00 – 17:00</span>
-                            </div>
-                            <div class="talk-speaker">
-                                <div class="speaker-talk-title">Oficina e Roda de Dialogo</div>
-                            </div>
-                        </div>
-                        <div class="event">
-                            <div class="time"><span class="time-entity">20h</span>
-                            </div>
-                            <div class="talk-speaker">
-                                <div class="speaker-talk-title">Pedale o Som</div>
-                            </div>
-                        </div>
+                    <div class="talk-speaker">
+                        <div class="speaker-talk-title">Inscrição e Cadastramento</div>
                     </div>
-                    <div class="tab-pane fade in" id="domingo">
-                        <div class="day-title">Domingo, 01 de Novembro</div>
-                        <div class="event">
-                            <div class="time"><span class="time-entity">08:00 – 10:00</span>
-                            </div>
-                            <div class="talk-speaker">
-                                <div class="speaker-talk-title">Pedal Cultural</div>
-                            </div>
-                        </div>
-
-                        <div class="event">
-                            <div class="time"><span class="time-entity">14:00 – 17:00</span>
-                            </div>
-                            <div class="talk-speaker">
-                                <div class="speaker-talk-title">Roda de Diálogo</div>
-                            </div>
-                        </div>
-                        <div class="event">
-                            <div class="time"><span class="time-entity">20h</span>
-                            </div>
-                            <div class="talk-speaker">
-                                <div class="speaker-talk-title">Encerramento</div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
-            </div>
-            <div class="table-responsive">
-                <table class="table table-striped">
-                    <tr>
-                        <th>Periodo</th>
-                        <th>Quinta 29/10</th>
-                        <th>Sexta 30/10</th>
-                        <th>Sabado 31/10</th>
-                        <th>Domingo 01/11</th>
-                    </tr>
-                    <tr>
-                        <td> Manhã
-                            <br> 08h00-10h00
-                            <br> 10h00-12h00 </td>
-                        <td></td>
-                        <td>Oficina + Roda de Dialogo</td>
-                        <td>Palestra + Mesa redonda</td>
-                        <td>Pedal Cultural</td>
-                    </tr>
-                    <!-- fim da segunda linha -->
-                    <tr>
-                        <td>Tarde
-                            <br> 14h00-16h00
-                            <br> 16h00-18h00 </td>
-                        <td>Inscrição e cadastramento</td>
-                        <td>Palestra + Mesa redonda</td>
-                        <td>Oficina + Roda de Dialogo</td>
-                        <td>Roda de diálogo</td>
-                    </tr>
-                    <!-- fim da terceira linha -->
-                    <tr>
-                        <td>Noite
-                            <br> 20h00 </td>
-                        <td>Palestra de abertura + Cine Pedal</td>
-                        <td>Massa Crítica</td>
-                        <td>Pedale o Som</td>
-                        <td>Encerramento (Bike Polo)</td>
-                    </tr>
-                    <!-- fim da quarta linha -->
-                </table>
-            </div>
+
+                <div class="event">
+                    <div class="time"><span class="time-entity">20:00 – 23:00</span>
+                    </div>
+                    <div class="talk-speaker">
+                        <div class="speaker-talk-title">Palestra de abertura e Cine Pedal</div>
+                    </div>
+                </div>
+                <div class="day-title">Sexta, 30 de Outubro</div>
+                <div class="event">
+                    <div class="time"><span class="time-entity">08:00 – 10:00</span>
+                    </div>
+                    <div class="talk-speaker">
+                        <div class="speaker-talk-title">Oficina e Roda de Dialogo</div>
+                    </div>
+                </div>
+
+                <div class="event">
+                    <div class="time"><span class="time-entity">14:00 – 17:00</span>
+                    </div>
+                    <div class="talk-speaker">
+                        <div class="speaker-talk-title">Palestra e Mesa Redonda</div>
+                    </div>
+                </div>
+                <div class="event">
+                    <div class="time"><span class="time-entity">20h</span>
+                    </div>
+                    <div class="talk-speaker">
+                        <div class="speaker-talk-title">Massa Critica</div>
+                    </div>
+                </div>
+                <div class="day-title">Sabado, 31 de Outubro</div>
+                <div class="event">
+                    <div class="time"><span class="time-entity">08:00 – 10:00</span>
+                    </div>
+                    <div class="talk-speaker">
+                        <div class="speaker-talk-title">Palestra e Mesa Redonda</div>
+                    </div>
+                </div>
+
+                <div class="event">
+                    <div class="time"><span class="time-entity">14:00 – 17:00</span>
+                    </div>
+                    <div class="talk-speaker">
+                        <div class="speaker-talk-title">Oficina e Roda de Dialogo</div>
+                    </div>
+                </div>
+                <div class="event">
+                    <div class="time"><span class="time-entity">20h</span>
+                    </div>
+                    <div class="talk-speaker">
+                        <div class="speaker-talk-title">Pedale o Som</div>
+                    </div>
+                </div>
+                <div class="day-title">Domingo, 01 de Novembro</div>
+                <div class="event">
+                    <div class="time"><span class="time-entity">08:00 – 10:00</span>
+                    </div>
+                    <div class="talk-speaker">
+                        <div class="speaker-talk-title">Pedal Cultural</div>
+                    </div>
+                </div>
+
+                <div class="event">
+                    <div class="time"><span class="time-entity">14:00 – 17:00</span>
+                    </div>
+                    <div class="talk-speaker">
+                        <div class="speaker-talk-title">Roda de Diálogo</div>
+                    </div>
+                </div>
+                <div class="event">
+                    <div class="time"><span class="time-entity">20h</span>
+                    </div>
+                    <div class="talk-speaker">
+                        <div class="speaker-talk-title">Encerramento</div>
+                    </div>
+                </div>
         </div>
+        </ul>
+
         <!-- /.secao-->
     </div>
     <!-- /.container -->
@@ -362,7 +317,7 @@
     <!-- inscricoes -->
     <div class="jumbotron" style="margin-bottom: 0px;">
         <div class="container">
-            <h1>Inscrições</h1>
+            <h1 class="title">Inscrições</h1>
             <p class="lead">Ainda vão ser abertas.</p>
             <section class="subscribe">
                 <div class="subscribe-pitch">
@@ -374,9 +329,9 @@
                 </form>
                 <hr>
 
-                <a href="#modalType" role="button" class="btn btn-warning" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"></span>Clique para se Inscrever</a>
+                <a href="#modalInscricao" role="button" class="btn btn-warning" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"></span>Clique para se Inscrever</a>
 
-                <div class="modal fade" id="modalType">
+                <div class="modal fade" id="modalInscricao">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -425,6 +380,19 @@
         </div>
         <div class="col-sm-1 col-md-4">
             <h1>hospedagem</h1>
+            <a href="#modalHost" role="button" class="btn btn-default" data-toggle="modal"><span class="glyphicon glyphicon-home"></span>Hospedagem solidária!</a> </div>
+        <div class="modal fade" id="modalHost">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Formulario de Hospedagem Solidária!</h4>
+                    </div>
+                    <div class="modal-body">
+                        <iframe src="https://docs.google.com/forms/d/17oVZVaw3F11BrC0AzmSLLMbNYmFib7TEgKYMvdn0STE/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Carregando...</iframe>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="col-sm-1 col-md-4">
             <h1>info</h1>
@@ -439,32 +407,32 @@
         <div class="container">
             <div class="secao">
                 <div class="text-center">
-                    <h1>Entidades Organizadoras</h1>
+                    <h1 class="title">Entidades Organizadoras</h1>
                     <div class="row">
                         <ul class="entidades" align="center">
                             <span>
     <a href="http://www.ameciclo.org/">
-        <img alt="AMECiclo" src="img/ameciclo_logo.png" />
+        <img alt="AMECiclo" src="img/ameciclo-logo.png" />
     </a>
 </span>
                             <span>
     <a href="http://www.ciclourbano.org.br/">
-        <img alt="Ciclourbano" src="img/ciclourbano_logo.jpeg" width="120px" height="120px" />
+        <img alt="Ciclourbano" src="img/ciclourbano-logo.jpeg" width="120px" height="120px" />
     </a>
 </span>
                             <span>
     <a href="http://acirn.blogspot.com.br/">
-        <img alt="ACIRN" src="img/acirn_logo.png" width="120px" height="120px" />
+        <img alt="ACIRN" src="img/acirn-logo.png" width="120px" height="120px" />
     </a>
 </span>
                             <span>
     <a href="https://mobicidadessa.wordpress.com/">
-        <img alt="Mobicidade" src="img/mobicidade_logo.jpg" width="175px" height="120px" />
+        <img alt="Mobicidade" src="img/mobicidade-logo.jpg" width="175px" height="120px" />
     </a>
 </span>
                             <span>
     <a href="https://www.facebook.com/CiclovidaFortaleza">
-        <img alt="Ciclovida" src="img/ciclovida_logo.jpg" width="120px" height="120px" />
+        <img alt="Ciclovida" src="img/ciclovida-logo.jpg" width="120px" height="120px" />
     </a>
 </span>
                         </ul>
@@ -474,12 +442,12 @@
                                 <ul align="center">
                                     <span>
             <a href="http://www.uniaodeciclistas.org.br/">
-                <img alt="UCB" src="img/ucb_logo.gif" width="200px" height="120px" />
+                <img alt="UCB" src="img/ucb-logo.gif" width="200px" height="120px" />
             </a>
         </span>
                                     <span>
             <a href="http://bikeanjo.org/">
-                <img alt="Bike Anjo" src="img/bikeanjo_logo.jpg" width="120px" height="120px" />
+                <img alt="Bike Anjo" src="img/bikeanjo-logo.jpg" width="120px" height="120px" />
             </a>
         </span>
                                 </ul>
@@ -536,7 +504,7 @@
                 <div class="col-md-6">
                     <!-- form de contato -->
                     <h2>Envie sua sugestão ou dúvida.</h2>
-                    <form class="form-horizontal" method="post" action="mail.php">
+                    <form class="form-horizontal" method="POST" action="mail.php">
                         <div class="form-group">
                             <div class="col-sm-10">
                                 <input type="text" class="form-control" id="inputName" name="name" placeholder="Nome">
