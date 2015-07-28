@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <meta charset="ISO-8859-1">
     <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -91,7 +92,17 @@
                     </li>
                     <li><a class="smooth-scroll" href="#programacao" data-toggle="collapse" data-target=".navbar-collapse">Programação</a>
                     </li>
-                    <li><a class="smooth-scroll" href="#inscricoes" data-toggle="collapse" data-target=".navbar-collapse">Inscrições</a>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Inscrições <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="smooth-scroll" href="#inscricoes">Participantes</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Trabalhos</a>
+                            </li>
+
+                        </ul>
+                    </li>
                     </li>
                     <li><a class="smooth-scroll" href="#faq" data-toggle="collapse" data-target=".navbar-collapse">Faq</a>
                     </li>
@@ -141,86 +152,97 @@
                     </div>
                 </li>
                 <li>
-<time class="cbp_tmtime" datetime="09:15"><span>45 minutos</span> <span>09:15</span></time>
-<div class="cbp_tmicon timeline_icon_test"></div>
-<div class="cbp_tmlabel">
-<div class="pull-right hidden-xs">Apresentador <strong>Alan Hoffmeister</strong><img src="/public/img/alan-hoffmeister.jpeg" alt="" class="img-circle speaker"></div>
-<h2><span>node ./hello-world.js</span>Hello World</h2>
-<p>A primeira coisa que vamos aprender será sobre as ferramentas que a plataforma nos disponibiliza, sobre o npm e como executar todos os códigos que iremos construir durante o workshop. Também teremos um pouco de teoria e informações adicionais desta plataforma, mas o foco do workshop é o código!</p>
-</div>
-</li>
+                    <time class="cbp_tmtime" datetime="09:15"><span>45 minutos</span> <span>09:15</span>
+                    </time>
+                    <div class="cbp_tmicon timeline_icon_test"></div>
+                    <div class="cbp_tmlabel">
+                        <div class="pull-right hidden-xs">Apresentador <strong>Alan Hoffmeister</strong><img src="/public/img/alan-hoffmeister.jpeg" alt="" class="img-circle speaker">
+                        </div>
+                        <h2><span>node ./hello-world.js</span>Hello World</h2>
+                        <p>A primeira coisa que vamos aprender será sobre as ferramentas que a plataforma nos disponibiliza, sobre o npm e como executar todos os códigos que iremos construir durante o workshop. Também teremos um pouco de teoria e informações adicionais desta plataforma, mas o foco do workshop é o código!</p>
+                    </div>
+                </li>
                 <li>
-<time class="cbp_tmtime" datetime="09:00"><span>1 hora</span> <span>10:00</span></time>
-<div class="cbp_tmicon timeline_icon_audio"></div>
-<div class="cbp_tmlabel">
-<h2><span>Por partes...</span>Módulos e dependências</h2>
-<p>Qualquer projeto criado com o Node.js pode ficar extenso, modularizar o seu código em partes é o jeito mais fácil de deixar o projeto fácil de manter. Vamos aprender também como instalar dependências em nossos projetos para não precisar reinventar a roda e aproveitar tudo o que já foi criado com o Node.js.</p>
-</div>
-</li>
-<li>
-<time class="cbp_tmtime" datetime="10:00"><span>1 hora</span> <span>11:00</span></time>
-<div class="cbp_tmicon timeline_icon_test"></div>
-<div class="cbp_tmlabel">
-<h2><span>Expandindo os horizontes</span>Eventos</h2>
-<p>O primeiro contato com código assíncrono de verdade! Vamos entender um pouco sobre o controle de fluxo responsável por organizar o coração do Node.js e, é claro, construir algo utilizando tudo o que acabamos de aprender.</p>
-</div>
-</li>
-<li>
-<time class="cbp_tmtime" datetime="12:00"><span>1 hora</span> <span>12:00</span></time>
-<div class="cbp_tmicon timeline_icon_break"></div>
-<div class="cbp_tmlabel">
-<h2><span>Alimentação</span>Almoço (não incluso)</h2>
-<p>É hora de parar, alimentar-se e relaxar um pouco. Aproveite para digerir também um pouco da informação que você recebeu até o momento e tire dúvidas com o apresentador do workshop.</p>
-</div>
-</li>
-<li>
-<time class="cbp_tmtime" datetime="13:00"><span>1 hora</span> <span>13:00</span></time>
-<div class="cbp_tmicon timeline_icon_doc"></div>
-<div class="cbp_tmlabel">
-<h2><span>Hey I just met you, and this is crazy!</span>Callbacks</h2>
-<p>Conforme aprendemos a lidar com a programação assíncrona, podemos notar que a quantidade de lógica necessária para realizar estas operações é sufocante, porém este quadro pode ser amenizado utilizando uma simples técnica que facilita e muito a vida de programadores da plataforma: os callbacks. Muitos não conseguem entendê-los e até desistem de programar para Node.js neste ponto, porém iremos analisar e aprender de forma fácil como utilizar esta metodologia.</p>
-</div>
-</li>
-<li>
-<time class="cbp_tmtime" datetime="14:00"><span>1 hora</span> <span>14:00</span></time>
-<div class="cbp_tmicon timeline_icon_doc"></div>
-<div class="cbp_tmlabel">
-<h2><span>Eu prometo!</span>Promises</h2>
-<p>Nem eventos nem callbacks. Existe uma solução mais fácil para controlar o fluxo da sua aplicação. As Promises são o canivete suido do Node.js, pode parecer um pouco complicado de aprender e utilizar, porém os benefícios desta aprendizagem podem transformar um método desconhecido em uma poderosa ferramenta para toda sua aplicação.</p>
-</div>
-</li>
-<li>
-<time class="cbp_tmtime" datetime="15:00"><span>45 minutos</span> <span>15:00</span></time>
-<div class="cbp_tmicon timeline_icon_test"></div>
-<div class="cbp_tmlabel">
-<h2><span>Não faça isso</span>Antipadrões</h2>
-<p>Quando chegarmos a essa parte, vocês perceberão que a plataforma não impõem padrões, limites ou metodologias forçadas. Por um lado isto é perfeito pois podemos construir muitas coisas interessantes e funcionais. Por outro, a falta de padrões pode ocasionar problemas a médio e longo prazo no desenvolvimento dos seus programas. Por isso é importante aprender a como não fazer as coisas de um jeito errado e evitar que vocês percam tempo refatorando, debugando ou tentando entender algum erro.</p>
-</div>
-</li>
-<li>
-<time class="cbp_tmtime" datetime="15:45"><span>15 minutos</span> <span>15:45</span></time>
-<div class="cbp_tmicon timeline_icon_break"></div>
-<div class="cbp_tmlabel">
-<h2><span>Pausa</span>coffee break (incluso)</h2>
-<p>Mais uma pequena pausa para arejar as ideias, provar um coffee break excelente e conversar sobre o workshop com os outros participantes. Aproveite para discutir dúvidas e opiniões sobre este workshop.</p>
-</div>
-</li>
-<li>
-<time class="cbp_tmtime" datetime="16:00"><span>90 minutos</span> <span>16:00</span></time>
-<div class="cbp_tmicon timeline_icon_test"></div>
-<div class="cbp_tmlabel">
-<h2><span>Mão na massa!</span>Escrevendo código</h2>
-<p>Ao longo do workshop muita coisa será aprendida e muito código será escrito, porém de nada adiantará tudo isso se não formos capazes de criar algo concreto utilizando o Node.js. Utilizaremos eventos, callbacks e promises juntamente com os recursos do core da plataforma para escrever uma aplicação e treinar tudo o que aprendemos até agora. Este é o momento certo para realizar operações nos arquivos de sistema, sockets, protocolos de comunicação HTTP/S, compactação, entre outras coisas que o Node.js pode fazer nativamente!</p>
-</div>
-</li>
-<li>
-<time class="cbp_tmtime" datetime="17:30"><span>30 minutos</span> <span>17:30</span></time>
-<div class="cbp_tmicon timeline_icon_audio"></div>
-<div class="cbp_tmlabel">
-<h2><span>Finalização</span>Encerramento</h2>
-<p>Vamos esclarecer as últimas dúvidas, revisar nosso código e nos despedir. Agora é a hora perfeita para expressar sua opinião sobre o workshop juntamente com o apresentador.</p>
-</div>
-</li>
+                    <time class="cbp_tmtime" datetime="09:00"><span>1 hora</span> <span>10:00</span>
+                    </time>
+                    <div class="cbp_tmicon timeline_icon_audio"></div>
+                    <div class="cbp_tmlabel">
+                        <h2><span>Por partes...</span>Módulos e dependências</h2>
+                        <p>Qualquer projeto criado com o Node.js pode ficar extenso, modularizar o seu código em partes é o jeito mais fácil de deixar o projeto fácil de manter. Vamos aprender também como instalar dependências em nossos projetos para não precisar reinventar a roda e aproveitar tudo o que já foi criado com o Node.js.</p>
+                    </div>
+                </li>
+                <li>
+                    <time class="cbp_tmtime" datetime="10:00"><span>1 hora</span> <span>11:00</span>
+                    </time>
+                    <div class="cbp_tmicon timeline_icon_test"></div>
+                    <div class="cbp_tmlabel">
+                        <h2><span>Expandindo os horizontes</span>Eventos</h2>
+                        <p>O primeiro contato com código assíncrono de verdade! Vamos entender um pouco sobre o controle de fluxo responsável por organizar o coração do Node.js e, é claro, construir algo utilizando tudo o que acabamos de aprender.</p>
+                    </div>
+                </li>
+                <li>
+                    <time class="cbp_tmtime" datetime="12:00"><span>1 hora</span> <span>12:00</span>
+                    </time>
+                    <div class="cbp_tmicon timeline_icon_break"></div>
+                    <div class="cbp_tmlabel">
+                        <h2><span>Alimentação</span>Almoço (não incluso)</h2>
+                        <p>É hora de parar, alimentar-se e relaxar um pouco. Aproveite para digerir também um pouco da informação que você recebeu até o momento e tire dúvidas com o apresentador do workshop.</p>
+                    </div>
+                </li>
+                <li>
+                    <time class="cbp_tmtime" datetime="13:00"><span>1 hora</span> <span>13:00</span>
+                    </time>
+                    <div class="cbp_tmicon timeline_icon_doc"></div>
+                    <div class="cbp_tmlabel">
+                        <h2><span>Hey I just met you, and this is crazy!</span>Callbacks</h2>
+                        <p>Conforme aprendemos a lidar com a programação assíncrona, podemos notar que a quantidade de lógica necessária para realizar estas operações é sufocante, porém este quadro pode ser amenizado utilizando uma simples técnica que facilita e muito a vida de programadores da plataforma: os callbacks. Muitos não conseguem entendê-los e até desistem de programar para Node.js neste ponto, porém iremos analisar e aprender de forma fácil como utilizar esta metodologia.</p>
+                    </div>
+                </li>
+                <li>
+                    <time class="cbp_tmtime" datetime="14:00"><span>1 hora</span> <span>14:00</span>
+                    </time>
+                    <div class="cbp_tmicon timeline_icon_doc"></div>
+                    <div class="cbp_tmlabel">
+                        <h2><span>Eu prometo!</span>Promises</h2>
+                        <p>Nem eventos nem callbacks. Existe uma solução mais fácil para controlar o fluxo da sua aplicação. As Promises são o canivete suido do Node.js, pode parecer um pouco complicado de aprender e utilizar, porém os benefícios desta aprendizagem podem transformar um método desconhecido em uma poderosa ferramenta para toda sua aplicação.</p>
+                    </div>
+                </li>
+                <li>
+                    <time class="cbp_tmtime" datetime="15:00"><span>45 minutos</span> <span>15:00</span>
+                    </time>
+                    <div class="cbp_tmicon timeline_icon_test"></div>
+                    <div class="cbp_tmlabel">
+                        <h2><span>Não faça isso</span>Antipadrões</h2>
+                        <p>Quando chegarmos a essa parte, vocês perceberão que a plataforma não impõem padrões, limites ou metodologias forçadas. Por um lado isto é perfeito pois podemos construir muitas coisas interessantes e funcionais. Por outro, a falta de padrões pode ocasionar problemas a médio e longo prazo no desenvolvimento dos seus programas. Por isso é importante aprender a como não fazer as coisas de um jeito errado e evitar que vocês percam tempo refatorando, debugando ou tentando entender algum erro.</p>
+                    </div>
+                </li>
+                <li>
+                    <time class="cbp_tmtime" datetime="15:45"><span>15 minutos</span> <span>15:45</span>
+                    </time>
+                    <div class="cbp_tmicon timeline_icon_break"></div>
+                    <div class="cbp_tmlabel">
+                        <h2><span>Pausa</span>coffee break (incluso)</h2>
+                        <p>Mais uma pequena pausa para arejar as ideias, provar um coffee break excelente e conversar sobre o workshop com os outros participantes. Aproveite para discutir dúvidas e opiniões sobre este workshop.</p>
+                    </div>
+                </li>
+                <li>
+                    <time class="cbp_tmtime" datetime="16:00"><span>90 minutos</span> <span>16:00</span>
+                    </time>
+                    <div class="cbp_tmicon timeline_icon_test"></div>
+                    <div class="cbp_tmlabel">
+                        <h2><span>Mão na massa!</span>Escrevendo código</h2>
+                        <p>Ao longo do workshop muita coisa será aprendida e muito código será escrito, porém de nada adiantará tudo isso se não formos capazes de criar algo concreto utilizando o Node.js. Utilizaremos eventos, callbacks e promises juntamente com os recursos do core da plataforma para escrever uma aplicação e treinar tudo o que aprendemos até agora. Este é o momento certo para realizar operações nos arquivos de sistema, sockets, protocolos de comunicação HTTP/S, compactação, entre outras coisas que o Node.js pode fazer nativamente!</p>
+                    </div>
+                </li>
+                <li>
+                    <time class="cbp_tmtime" datetime="17:30"><span>30 minutos</span> <span>17:30</span>
+                    </time>
+                    <div class="cbp_tmicon timeline_icon_audio"></div>
+                    <div class="cbp_tmlabel">
+                        <h2><span>Finalização</span>Encerramento</h2>
+                        <p>Vamos esclarecer as últimas dúvidas, revisar nosso código e nos despedir. Agora é a hora perfeita para expressar sua opinião sobre o workshop juntamente com o apresentador.</p>
+                    </div>
+                </li>
 
                 <div class="day-title">Quinta, 29 de Outubro</div>
                 <div class="event">
@@ -331,6 +353,10 @@
 
                 <a href="#modalInscricao" role="button" class="btn btn-warning" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"></span>Clique para se Inscrever</a>
 
+                <a href="#modalTrabalhos" role="button" class="btn btn-warning" data-toggle="modal" style="
+    margin-top: 40px;
+"><span class="glyphicon glyphicon-hand-up"></span>Chamada para trabalhos</a>
+
                 <div class="modal fade" id="modalInscricao">
                     <div class="modal-dialog">
                         <div class="modal-content">
@@ -365,10 +391,112 @@
                         </div>
                     </div>
                 </div>
+                <div class="modal fade" id="modalTrabalhos">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Regulamento para envio de trabalhos</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="tabbable">
+                                    <ul class="nav nav-tabs nav-justified">
+                                        <li class="active"><a href="#tema" data-toggle="tab">Temas</a>
+                                        </li>
+                                        <li><a href="#apresentacao" data-toggle="tab">Apresentação</a>
+                                        </li>
+
+                                        <li><a href="#submissao" data-toggle="tab">Submissão</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane active fade in" id="tema">
+                                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading" role="tab" id="headingOne">
+                                                        <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          1. A sociedade da bicicleta
+        </a>
+      </h4>
+                                                    </div>
+                                                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                                        <div class="panel-body">
+                                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading" role="tab" id="headingTwo">
+                                                        <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          2. Novas Tecnologias e Inovação
+        </a>
+      </h4>
+                                                    </div>
+                                                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                                        <div class="panel-body">
+                                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading" role="tab" id="headingThree">
+                                                        <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          3. A Bicicleta em números
+        </a>
+      </h4>
+                                                    </div>
+                                                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                                        <div class="panel-body">
+                                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                 <div class="panel panel-default">
+                                                    <div class="panel-heading" role="tab" id="headingFour">
+                                                        <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          4. A bicicleta no planejamento das cidades
+        </a>
+      </h4>
+                                                    </div>
+                                                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                                        <div class="panel-body">
+                                                            Teste
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade in" id="apresentacao">
+                                            <h4>Acordeon Pecha Kucha e Banner</h4>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mattis diam vitae erat eleifend, et lacinia urna facilisis. Praesent lacinia sapien in ipsum porta condimentum. Sed mollis sapien sapien, in tristique orci volutpat sit amet. Quisque ultricies nec mauris vitae ullamcorper. Sed bibendum lectus non erat mollis fringilla. Duis in commodo odio, nec ullamcorper ipsum.</p>
+                                        </div>
+                                        <div class="tab-pane fade in" id="submissao">
+                                            <h4>Sabado</h4>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mattis diam vitae erat eleifend, et lacinia urna facilisis. Praesent lacinia sapien in ipsum porta condimentum. Sed mollis sapien sapien, in tristique orci volutpat sit amet. Quisque ultricies nec mauris vitae ullamcorper. Sed bibendum lectus non erat mollis fringilla. Duis in commodo odio, nec ullamcorper ipsum.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
             </section>
         </div>
         <!-- /.container -->
     </div>
+    <!-- /. chamada para trabalhos -->
+
     <!-- FAQ -->
     <a id="faq"></a>
     <div class="secao">
