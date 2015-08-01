@@ -9,34 +9,25 @@ $('.smooth-scroll').smoothScroll({
 
 //Map
 // create a map in the "map" div, set the view to a given place and zoom
-var map = L.map('map').setView([-8.05794, -34.87935], 18);
-
-// add an OpenStreetMap tile layer
-L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
-L.Control.geocoder().addTo(map);
-var bicicletaIcon = L.icon({
-    iconUrl: 'ms-icon-310x310.png',
-
-    iconSize: [40, 40], // size of the icon
-    iconAnchor: [01, 70], // point of the icon which will correspond to marker's location
-
-
+var map = L.map('map').setView([-8.05794, -34.87935], 16);
+var Hydda_Full = L.tileLayer('http://{s}.tile.openstreetmap.se/hydda/full/{z}/{x}/{y}.png', {
+	attribution: 'Tiles courtesy of <a href="http://openstreetmap.se/" target="_blank">OpenStreetMap Sweden</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 });
 
-L.Routing.control({
-    waypoints: [
-        L.latLng(57.74, 11.94),
-        L.latLng(57.6792, 11.949)
-    ],
-    routeWhileDragging: true,
-    geocoder: L.Control.Geocoder.nominatim()
-}).addTo(map);
 
-L.marker([-8.05794, -34.87935], {
-    icon: bicicletaIcon
+// add an OpenStreetMap tile layer
+L.tileLayer('http://{s}.tile.openstreetmap.se/hydda/full/{z}/{x}/{y}.png', {
+	attribution: 'Tiles courtesy of <a href="http://openstreetmap.se/" target="_blank">OpenStreetMap Sweden</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
+ var redMarker = L.ExtraMarkers.icon({
+    icon: 'fa-bicycle',
+    markerColor: 'red',
+    shape: 'square',
+    prefix: 'fa',
+  });
+
+//L.marker([-8.05794, -34.87935], {}).addTo(map);
+L.marker([-8.05794, -34.87935], {icon: redMarker,}).addTo(map);
 
 // Form
 $('#submit').click(function () {

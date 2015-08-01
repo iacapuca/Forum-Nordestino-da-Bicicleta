@@ -39,6 +39,7 @@
     <!-- Custom Styles -->
     <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/bicycle.css">
+    <link rel="stylesheet" href="css/leaflet.extra-markers.css" />
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
     <link rel="stylesheet" href="css/leaflet-routing-machine.css" />
     <link rel="stylesheet" href="css/Control.Geocoder.css" />
@@ -484,7 +485,7 @@
                                                     </div>
                                                     <div id="collapsePecha" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingPecha">
                                                         <div class="panel-body">
-                                                            Aspectos socias | Forças e ações sociais | Soluções Bottom-up Ações da sociedade civil organizada Cicloativismo e Associações de ciclistas A bicicletada/massa crítica no Brasil Intervenções feitas pela população (Urbanismo Tático) O perfil do ciclista Bicicleta como inclusão social Percepção e motivação do ciclista O gênero no uso da bicicleta Perfil do ciclista urbano
+                                                            Apresentação em Power Point, 20 slides programados para 20 segundos cada, tempo total da apresentação de 6 minutos e 40 segundos. Este formato torna a apresentação legal, curta e dinâmica. Assim as ideias são transmitidas de forma mais clara e são escolhidas imagens que representem bem as ideias. Aqui o formato da apresentação (template.pptx)
                                                         </div>
                                                     </div>
                                                 </div>
@@ -498,16 +499,50 @@
                                                     </div>
                                                     <div id="collapseBanner" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingBanner">
                                                         <div class="panel-body">
-                                                            Sistemas de bicicleta compartilhada Sistemas de integração de transportes Plataformas com dados Mapeamento
+                                                            Breve descrição do banner, o legal de ter o banner no dia do evento e conteúdo Aqui o carimbo/selo/marca/cabeçalho do banner (cabeçalho.png)
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="tab-pane fade in" id="submissao">
-                                            <h4>Sabado</h4>
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mattis diam vitae erat eleifend, et lacinia urna facilisis. Praesent lacinia sapien in ipsum porta condimentum. Sed mollis sapien sapien, in tristique orci volutpat sit amet. Quisque ultricies nec mauris vitae ullamcorper. Sed bibendum lectus non erat mollis fringilla. Duis in commodo odio, nec ullamcorper ipsum.</p>
+
+                                            <div class="panel-group" id="accordion-submissao" role="tablist" aria-multiselectable="true">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading" role="tab" id="headingSubmissao">
+                                                        <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion-submissao" href="#collapseSubmissao" aria-expanded="true" aria-controls="collapseSubmissao">
+            Instruções
+        </a>
+      </h4>
+                                                    </div>
+                                                    <div id="collapseSubmissao" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingSubmissao">
+                                                        <div class="panel-body">
+                                                            <a href="#" class="btn btn-lg btn-default"><span class="glyphicon glyphicon-circle-arrow-down"></span>Clique aqui para baixar o modelo</a> </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <iframe allowtransparency="true" src='http://www.formpl.us/form/0B7EQZ81f3nQdVXR1VkJSdGdXQ3c/' frameborder="0" style="width:100%; height:600px; border:none;" scrolling="no">
+                                            </iframe>
+
+
+                                            <div id="output"></div>
+
+                                            <script>
+                                                function fileUploaded(status) {
+                                                    document.getElementById('myForm').style.display = 'none';
+                                                    document.getElementById('output').innerHTML = status;
+                                                }
+                                            </script>
+
+                                            <style>
+                                                input {
+                                                    display: block;
+                                                    margin: 20px;
+                                                }
+                                            </style>
+
+
                                         </div>
                                     </div>
                                 </div>
@@ -524,17 +559,97 @@
     <!-- /. chamada para trabalhos -->
 
     <!-- FAQ -->
+    <div class="secao">
+        <h1>mapa</h1>
+        <div id="map" style="height: 350px"></div>
+    </div>
     <a id="faq"></a>
     <div class="secao">
-        <h1>FAQ</h1>
-        <div class="col-sm-1 col-md-4">
-            <h1>mapa</h1>
-            <div id="map" style="height: 350px"></div>
+        <h1>perguntas frequentes</h1>
 
-        </div>
-        <div class="col-sm-1 col-md-4">
+        <div class="col-sm-1 col-md-8">
             <h1>hospedagem</h1>
-            <a href="#modalHost" role="button" class="btn btn-default" data-toggle="modal"><span class="glyphicon glyphicon-home"></span>Hospedagem solidária!</a> </div>
+
+            <div class="service">
+                <div class="service-icon">
+                    <span class="glyphicon glyphicon-bed"></span> </div>
+                <div class="service-text">
+                    <h6>Hospedagem Voluntária</h6>
+                    <p>
+                        Não tem onde ficar? Alguns recifenses participantes do forum estão abrindo suas casas voluntariamente para hospedar aqueles que vem participar do forum, clique aqui para saber mais.
+                    </p>
+                </div>
+            </div>
+            <!--end of Individual Service-->
+
+            <div class="service">
+                <div class="service-icon">
+                    <i class="fa fa-bicycle"></i>
+                </div>
+                <div class="service-text">
+                    <h6>Bicicleta</h6>
+                    <p>Vem de bike? Durante o Forum disponibilizaremos bicicletários no local do Evento.
+                        <br> Clique <a href="http://www.bikeit.com.br/recife/#lat=-8.054641881877867&lng=-34.881184101104736&zoom=16" target="_blank">aqui</a> para visualizar uma lista de estabelecimentos amigos do ciclista!
+                    </p>
+                </div>
+            </div>
+            <!--end of Individual Service-->
+
+            <div class="service">
+                <div class="service-icon">
+                    <i class="fa fa-users"></i>
+                </div>
+                <div class="service-text">
+                    <h6>Identificação</h6>
+                    <p>
+                        Haverá credenciamento no primeiro dia do evento, caso você chegue atrasado entre em contato com alguem da staff.
+                    </p>
+                </div>
+            </div>
+            <!--end of Individual Service-->
+
+            <div class="service">
+                <div class="service-icon">
+                    <div class="icon icon_drive_alt"></div>
+                </div>
+                <div class="service-text">
+                    <h6>Backup</h6>
+                    <p>
+                        Se for instalar o sistema GNU/Linux Debian, lembre-se de fazer backup antes do evento. A CryptoRave não fornecerá HDs para o backup dos seus dados.
+                    </p>
+                </div>
+            </div>
+            <!--end duvida -->
+
+            <div class="service">
+                <div class="service-icon">
+                    <div class="icon icon_lock"></div>
+                </div>
+                <div class="service-text">
+                    <h6>Senhas</h6>
+                    <p>
+                        Em hipótese alguma forneça as suas senhas para as pessoas do evento! Mesmo aquelas que estarão colaborando na instalação do GNU/Linux Debian.
+                    </p>
+                </div>
+            </div>
+            <!--end duvida-->
+
+            <div class="service">
+                <div class="service-icon">
+                    <div class="icon icon_camera"></div>
+                </div>
+                <div class="service-text">
+                    <h6>Privacidade</h6>
+                    <p>
+                        Não tire fotos ou filme as pessoas que participam do evento sem a permissão delas.
+                    </p>
+                </div>
+            </div>
+            <!--end duvida-->
+
+
+            <a href="#modalHost" role="button" class="btn btn-default" data-toggle="modal"><span class="glyphicon glyphicon-home"></span>Hospedagem solidária!</a>
+        </div>
         <div class="modal fade" id="modalHost">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -697,11 +812,14 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
     <script src="js/leaflet-routing-machine.js"></script>
+    <script src="js/Leaflet.Sleep.js"></script>
+    <script src="js/leaflet.extra-markers.js"></script>
     <script src="js/Control.Geocoder.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.smooth-scroll.js"></script>
     <script src="js/jquery.ba-hashchange.min.js"></script>
+    <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/scripts.js"></script>
     <script src='js/share.min.js'></script>
 

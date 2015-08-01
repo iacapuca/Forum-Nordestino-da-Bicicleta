@@ -160,6 +160,7 @@ h1 {
 
 .btn {
     /* border-radius: 0; */
+
     border-color: #ffec9e;
     background-color: #ffec9e;
     color: #000;
@@ -647,8 +648,53 @@ button.expand:hover {
         background: #d5d5d5;
         border-radius: 50%;
     }
-
-    .secao span{
+    .secao span {
         padding: 10px;
     }
-
+    #services {
+        background-color: #ececec;
+        position: relative;
+    }
+    #services-bg {
+        background: url('../img/ccsp7.jpg') transparent;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        height: 100%;
+        width: 33.33333%;
+        z-index: 2;
+        background-size: cover;
+        background-position: -450px, 0px;
+    }
+    #services .columns {
+        position: relative;
+    }
+    #services .page-title {
+        margin-bottom: 22px;
+    }
+    #services .lead {
+        margin-bottom: 44px;
+    }
+    .service {
+        overflow: hidden;
+        width: 50%;
+        padding-right: 15px;
+        float: left;
+        margin-bottom: 33px;
+    }
+    .service h6 {
+        font-size: 14px;
+        color: #525252;
+        margin-bottom: 11px;
+    }
+    .service-icon {
+        width: 16%;
+        float: left;
+        font-size: 30px;
+        color: #525252;
+    }
+    .service-text {
+        width: 84%;
+        float: left;
+    }
