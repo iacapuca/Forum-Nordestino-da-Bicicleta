@@ -29,6 +29,14 @@ L.tileLayer('http://{s}.tile.openstreetmap.se/hydda/full/{z}/{x}/{y}.png', {
 //L.marker([-8.05794, -34.87935], {}).addTo(map);
 L.marker([-8.05794, -34.87935], {icon: redMarker,}).addTo(map);
 
+//L.Control
+
+//Camada Cicloviaria
+L.geoJson(ciclovias).addTo(map);
+
+
+
+
 // Form
 $('#submit').click(function () {
     var name = $('#name').val();
