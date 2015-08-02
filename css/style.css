@@ -561,7 +561,8 @@ button.expand:hover {
         margin-top: 2250px
     }
 }
-    /* FAQ */
+/* FAQ */
+
 .white {
     color: white;
 }
@@ -595,8 +596,6 @@ button.expand:hover {
     color: #fff !important;
 }
 
-
-
 .box > .icon > .info {
     margin-top: -24px;
     background: rgba(0, 0, 0, 0.04);
@@ -604,16 +603,16 @@ button.expand:hover {
     padding: 15px 0 10px 0;
 }
 
-    .box > .icon > .info > h3.title {
-        color: #222;
-        font-weight: 500;
-    }
+.box > .icon > .info > h3.title {
+    color: #222;
+    font-weight: 500;
+}
 
-    .box > .icon > .info > p {
-        color: #666;
-        line-height: 1.5em;
-        margin: 20px;
-    }
+.box > .icon > .info > p {
+    color: #666;
+    line-height: 1.5em;
+    margin: 20px;
+}
 
 .box > .icon > .info > .more a {
     color: #222;
@@ -625,4 +624,8 @@ button.expand:hover {
 .box .space {
     height: 30px;
 }
-        /*  FIM FAQ */
+/*  FIM FAQ */
+
+.secao span {
+    padding: 10px;
+}
