@@ -1,18 +1,40 @@
 <?php
+    if (isset($_POST["submit"])) {
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $message = $_POST['texto'];
+        $from = 'Demo Contact Form';
+        $to = 'contato@fnebici.com.br';
+        $subject = 'Message from Contact Demo ';
 
-    $to = "contato@fne.com.br";
-    $from = $_REQUEST['email'];
-    $name = $_REQUEST['name'];
-    $headers = "De: $from";
-    $subject = "Você tem uma nova mensagem do site do FNE";
+        $body = "From: $name\n E-Mail: $email\n Message:\n $message";
 
-    $fields = array();
-    $fields{"name"} = "name";
-    $fields{"email"} = "email";
-    $fields{"texto"} = "texto";
+        // Check if name has been entered
+        if (!$_POST['name']) {
+            $errName = 'Please enter your name';
+        }
 
-    $body = "Aqui está o que foi enviado:\n\n"; foreach($fields as $a => $b){   $body .= sprintf("%20s: %s\n",$b,$_REQUEST[$a]); }
+        // Check if email has been entered and is valid
+        if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+            $errEmail = 'Please enter a valid email address';
+        }
 
-    $send = mail($to, $subject, $body, $headers);
+        //Check if message has been entered
+        if (!$_POST['texto']) {
+            $errMessage = 'Please enter your message';
+        }
+        //Check if simple anti-bot test is correct
+        if ($human !== 5) {
+            $errHuman = 'Your anti-spam is incorrect';
+        }
 
+// If there are no errors, send the email
+if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
+    if (mail ($to, $subject, $body, $from)) {
+        $result='<div class="alert alert-success">Thank You! I will be in touch</div>';
+    } else {
+        $result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later</div>';
+    }
+}
+    }
 ?>
