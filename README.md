@@ -1,4 +1,4 @@
 # Forum-Nordestino-da-Bicicleta
 Fórum Nordestino da Bicicleta
 
-Faz-se necessário comentar que no Branch Master devem ser commitadas apenas atualizações sem bugs e prontas para irem ao ar.
+Este Branch deve ser usado apenas para a finalidade de testes, sendo instavel e não recomendavel para merge com o Master.
