@@ -211,29 +211,29 @@
   }
 }
 .bike {
-  width: 635px;
-  height: 400px;
-  margin: auto;
-  margin-top: 368px;
   position: absolute;
+  right: 0;
   bottom: 0;
   left: 0;
-  right: 0;
+  margin: auto;
+  margin-top: 368px;
+  width: 635px;
+  height: 400px;
   -webkit-animation-name: riding;
-  -webkit-animation-duration: 6s;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
   -moz-animation-name: riding;
-  -moz-animation-duration: 6s;
-  -moz-animation-timing-function: linear;
-  -moz-animation-iteration-count: infinite;
   -o-animation-name: riding;
-  -o-animation-duration: 6s;
-  -o-animation-timing-function: linear;
-  -o-animation-iteration-count: infinite;
   animation-name: riding;
+  -webkit-animation-duration: 6s;
+  -moz-animation-duration: 6s;
+  -o-animation-duration: 6s;
   animation-duration: 6s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
   animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 .bike .part {
@@ -241,70 +241,70 @@
 }
 
 .frame .bar {
-  width: 12px;
   position: absolute;
+  width: 12px;
   background: #E8BF56;
 }
 .frame .bar.left-top {
+  margin-top: 110px;
+  margin-left: 128px;
   width: 10px;
   height: 186px;
-  margin-left: 128px;
-  margin-top: 110px;
-  -moz-transform: rotate(37deg);
-  -o-transform: rotate(37deg);
-  -ms-transform: rotate(37deg);
   -webkit-transform: rotate(37deg);
+  -moz-transform: rotate(37deg);
+  -ms-transform: rotate(37deg);
+  -o-transform: rotate(37deg);
   transform: rotate(37deg);
 }
 .frame .bar.left-bottom {
-  width: 8px;
-  margin-left: 149px;
   margin-top: 203px;
+  margin-left: 149px;
+  width: 8px;
   height: 170px;
-  -moz-transform: rotate(-82deg);
-  -o-transform: rotate(-82deg);
-  -ms-transform: rotate(-82deg);
   -webkit-transform: rotate(-82deg);
+  -moz-transform: rotate(-82deg);
+  -ms-transform: rotate(-82deg);
+  -o-transform: rotate(-82deg);
   transform: rotate(-82deg);
 }
 .frame .bar.left {
-  height: 230px;
-  margin-left: 200px;
   margin-top: 80px;
-  -moz-transform: rotate(-15deg);
-  -o-transform: rotate(-15deg);
-  -ms-transform: rotate(-15deg);
+  margin-left: 200px;
+  height: 230px;
   -webkit-transform: rotate(-15deg);
+  -moz-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  -o-transform: rotate(-15deg);
   transform: rotate(-15deg);
 }
 .frame .bar.top {
-  height: 224px;
-  margin-left: 282px;
   margin-top: -10px;
-  -moz-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
+  margin-left: 282px;
+  height: 224px;
   -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 .frame .bar.bottom {
-  margin-left: 317px;
   margin-top: 87px;
+  margin-left: 317px;
   height: 250px;
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 .frame .bar.right {
-  height: 230px;
-  margin-left: 421px;
   margin-top: 60px;
-  -moz-transform: rotate(-19deg);
-  -o-transform: rotate(-19deg);
-  -ms-transform: rotate(-19deg);
+  margin-left: 421px;
+  height: 230px;
   -webkit-transform: rotate(-19deg);
+  -moz-transform: rotate(-19deg);
+  -ms-transform: rotate(-19deg);
+  -o-transform: rotate(-19deg);
   transform: rotate(-19deg);
 }
 
@@ -312,56 +312,56 @@
   margin-left: 184px;
 }
 .sadle .sit-here {
-  height: 0;
-  width: 10px;
   position: absolute;
-  border-bottom: 110px solid #000;
-  border-left: 0px solid transparent;
-  border-right: 22px solid transparent;
-  border-radius: 10px 0 10px 0;
   margin-top: -20px;
   margin-left: -35px;
-  -moz-transform: rotate(98deg);
-  -o-transform: rotate(98deg);
-  -ms-transform: rotate(98deg);
+  width: 10px;
+  height: 0;
+  border-right: 22px solid transparent;
+  border-bottom: 110px solid #000;
+  border-left: 0px solid transparent;
+  border-radius: 10px 0 10px 0;
   -webkit-transform: rotate(98deg);
+  -moz-transform: rotate(98deg);
+  -ms-transform: rotate(98deg);
+  -o-transform: rotate(98deg);
   transform: rotate(98deg);
 }
 .sadle .sadlepen {
+  position: absolute;
+  margin-top: 30px;
   width: 10px;
   height: 200px;
-  margin-top: 30px;
-  position: absolute;
   background: #dadada;
-  -moz-transform: rotate(-16deg);
-  -o-transform: rotate(-16deg);
-  -ms-transform: rotate(-16deg);
   -webkit-transform: rotate(-16deg);
+  -moz-transform: rotate(-16deg);
+  -ms-transform: rotate(-16deg);
+  -o-transform: rotate(-16deg);
   transform: rotate(-16deg);
 }
 
 .wheel {
+  margin-top: 160px;
   width: 200px;
   height: 200px;
-  margin-top: 160px;
-  border-radius: 100%;
   border: 15px solid #dadada;
+  border-radius: 100%;
   box-shadow: 0 0 0 10px #333;
   -webkit-animation-name: wheelspin;
-  -webkit-animation-duration: 3s;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
   -moz-animation-name: wheelspin;
-  -moz-animation-duration: 3s;
-  -moz-animation-timing-function: linear;
-  -moz-animation-iteration-count: infinite;
   -o-animation-name: wheelspin;
-  -o-animation-duration: 3s;
-  -o-animation-timing-function: linear;
-  -o-animation-iteration-count: infinite;
   animation-name: wheelspin;
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -o-animation-duration: 3s;
   animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
   animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 .wheel.left {
@@ -371,69 +371,69 @@
   margin-left: 348px;
 }
 .wheel .spoke {
+  position: absolute;
+  margin-left: 98px;
   width: 2px;
   height: 200px;
-  margin-left: 98px;
-  position: absolute;
   background: #dadada;
 }
 .wheel .spoke:nth-child(2) {
-  -moz-transform: rotate(30deg);
-  -o-transform: rotate(30deg);
-  -ms-transform: rotate(30deg);
   -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
   transform: rotate(30deg);
 }
 .wheel .spoke:nth-child(3) {
-  -moz-transform: rotate(60deg);
-  -o-transform: rotate(60deg);
-  -ms-transform: rotate(60deg);
   -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
   transform: rotate(60deg);
 }
 .wheel .spoke:nth-child(4) {
-  -moz-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 .wheel .spoke:nth-child(5) {
-  -moz-transform: rotate(120deg);
-  -o-transform: rotate(120deg);
-  -ms-transform: rotate(120deg);
   -webkit-transform: rotate(120deg);
+  -moz-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  -o-transform: rotate(120deg);
   transform: rotate(120deg);
 }
 .wheel .spoke:nth-child(6) {
-  -moz-transform: rotate(150deg);
-  -o-transform: rotate(150deg);
-  -ms-transform: rotate(150deg);
   -webkit-transform: rotate(150deg);
+  -moz-transform: rotate(150deg);
+  -ms-transform: rotate(150deg);
+  -o-transform: rotate(150deg);
   transform: rotate(150deg);
 }
 .wheel .spoke:nth-child(7) {
-  -moz-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 .wheel .spoke:nth-child(8) {
-  -moz-transform: rotate(210deg);
-  -o-transform: rotate(210deg);
-  -ms-transform: rotate(210deg);
   -webkit-transform: rotate(210deg);
+  -moz-transform: rotate(210deg);
+  -ms-transform: rotate(210deg);
+  -o-transform: rotate(210deg);
   transform: rotate(210deg);
 }
 
 .axis {
+  position: absolute;
+  margin-top: 265px;
   width: 25px;
   height: 25px;
-  margin-top: 265px;
-  position: absolute;
-  background: #333;
   border-radius: 100%;
+  background: #333;
 }
 .axis.left {
   margin-left: 67px;
@@ -443,176 +443,177 @@
 }
 
 .handlebar .stem {
-  width: 10px;
-  height: 200px;
+  position: absolute;
   margin-top: 45px;
   margin-left: 412px;
-  position: absolute;
+  width: 10px;
+  height: 200px;
   background: #dadada;
-  -moz-transform: rotate(-19deg);
-  -o-transform: rotate(-19deg);
-  -ms-transform: rotate(-19deg);
   -webkit-transform: rotate(-19deg);
+  -moz-transform: rotate(-19deg);
+  -ms-transform: rotate(-19deg);
+  -o-transform: rotate(-19deg);
   transform: rotate(-19deg);
 }
 .handlebar .connector {
+  margin-top: 40px;
+  margin-left: 374px;
   width: 20px;
   height: 20px;
-  margin-left: 374px;
-  margin-top: 40px;
-  -moz-transform: rotate(-19deg);
-  -o-transform: rotate(-19deg);
-  -ms-transform: rotate(-19deg);
-  -webkit-transform: rotate(-19deg);
-  transform: rotate(-19deg);
   background: #dadada;
+  -webkit-transform: rotate(-19deg);
+  -moz-transform: rotate(-19deg);
+  -ms-transform: rotate(-19deg);
+  -o-transform: rotate(-19deg);
+  transform: rotate(-19deg);
 }
 .handlebar .prehandle {
+  margin-top: -45px;
+  margin-left: 394px;
   width: 15px;
   height: 40px;
-  margin-left: 394px;
-  margin-top: -45px;
-  -moz-transform: rotate(42deg);
-  -o-transform: rotate(42deg);
-  -ms-transform: rotate(42deg);
-  -webkit-transform: rotate(42deg);
-  transform: rotate(42deg);
   background: #dadada;
+  -webkit-transform: rotate(42deg);
+  -moz-transform: rotate(42deg);
+  -ms-transform: rotate(42deg);
+  -o-transform: rotate(42deg);
+  transform: rotate(42deg);
 }
 .handlebar .handle {
+  position: absolute;
+  margin-top: -45px;
+  margin-left: 400px;
   width: 25px;
   height: 25px;
-  margin-left: 400px;
-  margin-top: -45px;
-  position: absolute;
-  background: #000;
   border-radius: 100%;
+  background: #000;
 }
 
 .pedals {
-  margin-left: 227px;
   margin-top: 295px;
+  margin-left: 227px;
 }
 .pedals * {
   position: absolute;
 }
 .pedals .inside {
+  margin-top: 2.4px;
+  margin-left: 3.5px;
   width: 9px;
   height: 9px;
-  background: #333;
   border-radius: 100%;
-  margin-left: 3.5px;
-  margin-top: 2.4px;
+  background: #333;
 }
 .pedals .outside {
-  width: 80px;
-  height: 80px;
   margin-top: -39px;
   margin-left: -37px;
+  width: 80px;
+  height: 80px;
   border: 5px solid #000;
   border-radius: 100%;
 }
 .pedals .pedalstem {
+  margin-left: 2px;
   width: 12px;
   height: 80px;
-  margin-left: 2px;
-  background: #dadada;
   border-radius: 10px 10px 0 0;
+  background: #dadada;
   transform-origin: 6px 7px;
 }
 .pedals .pedalstem.front {
   -webkit-animation-name: pedalstem-front;
-  -webkit-animation-duration: 1.5s;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
   -moz-animation-name: pedalstem-front;
-  -moz-animation-duration: 1.5s;
-  -moz-animation-timing-function: linear;
-  -moz-animation-iteration-count: infinite;
   -o-animation-name: pedalstem-front;
-  -o-animation-duration: 1.5s;
-  -o-animation-timing-function: linear;
-  -o-animation-iteration-count: infinite;
   animation-name: pedalstem-front;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -o-animation-duration: 1.5s;
   animation-duration: 1.5s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
   animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 .pedals .pedalstem.back {
-  -webkit-animation-name: pedalstem-back;
-  -webkit-animation-duration: 1.5s;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-name: pedalstem-back;
-  -moz-animation-duration: 1.5s;
-  -moz-animation-timing-function: linear;
-  -moz-animation-iteration-count: infinite;
-  -o-animation-name: pedalstem-back;
-  -o-animation-duration: 1.5s;
-  -o-animation-timing-function: linear;
-  -o-animation-iteration-count: infinite;
-  animation-name: pedalstem-back;
-  animation-duration: 1.5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  -moz-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
   transform: rotate(180deg);
+  -webkit-animation-name: pedalstem-back;
+  -moz-animation-name: pedalstem-back;
+  -o-animation-name: pedalstem-back;
+  animation-name: pedalstem-back;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -o-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
 .pedals .pedalbase {
-  width: 40px;
-  height: 15px;
   margin-top: 70px;
   margin-left: -12px;
+  width: 40px;
+  height: 15px;
   background: #000;
 }
 .pedals .pedalbase.front {
   -webkit-animation-name: pedalbase-front;
-  -webkit-animation-duration: 1.5s;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
   -moz-animation-name: pedalbase-front;
-  -moz-animation-duration: 1.5s;
-  -moz-animation-timing-function: linear;
-  -moz-animation-iteration-count: infinite;
   -o-animation-name: pedalbase-front;
-  -o-animation-duration: 1.5s;
-  -o-animation-timing-function: linear;
-  -o-animation-iteration-count: infinite;
   animation-name: pedalbase-front;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -o-animation-duration: 1.5s;
   animation-duration: 1.5s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
   animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 .pedals .pedalbase.back {
   -webkit-animation-name: pedalbase-back;
-  -webkit-animation-duration: 1.5s;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
   -moz-animation-name: pedalbase-back;
-  -moz-animation-duration: 1.5s;
-  -moz-animation-timing-function: linear;
-  -moz-animation-iteration-count: infinite;
   -o-animation-name: pedalbase-back;
-  -o-animation-duration: 1.5s;
-  -o-animation-timing-function: linear;
-  -o-animation-iteration-count: infinite;
   animation-name: pedalbase-back;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -o-animation-duration: 1.5s;
   animation-duration: 1.5s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
   animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 
 .pause {
+  margin: 10% auto;
   width: 20px;
   height: 55px;
-  margin: 10% auto;
-  background: #fff;
-  cursor: pointer;
   border-right: 12px solid #E8BF56;
   border-left: 12px solid #E8BF56;
+  background: #fff;
+  cursor: pointer;
+
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
@@ -622,9 +623,9 @@
   width: 0;
   height: 0;
   border-top: 25.5px solid transparent;
-  border-left: 44px solid #e8bf56;
-  border-bottom: 25.5px solid transparent;
   border-right: none;
+  border-bottom: 25.5px solid transparent;
+  border-left: 44px solid #e8bf56;
 }
 
 .paused,
@@ -637,115 +638,115 @@
 
 .bike-two {
   -webkit-animation-name: riding;
-  -webkit-animation-duration: 4s;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
   -moz-animation-name: riding;
-  -moz-animation-duration: 4s;
-  -moz-animation-timing-function: linear;
-  -moz-animation-iteration-count: infinite;
   -o-animation-name: riding;
-  -o-animation-duration: 4s;
-  -o-animation-timing-function: linear;
-  -o-animation-iteration-count: infinite;
   animation-name: riding;
+  -webkit-animation-duration: 4s;
+  -moz-animation-duration: 4s;
+  -o-animation-duration: 4s;
   animation-duration: 4s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
   animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 .bike-two .pedalstem.front {
   -webkit-animation-name: pedalstem-front;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
   -moz-animation-name: pedalstem-front;
-  -moz-animation-duration: 1s;
-  -moz-animation-timing-function: linear;
-  -moz-animation-iteration-count: infinite;
   -o-animation-name: pedalstem-front;
-  -o-animation-duration: 1s;
-  -o-animation-timing-function: linear;
-  -o-animation-iteration-count: infinite;
   animation-name: pedalstem-front;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
   animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
   animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 .bike-two .pedalstem.back {
-  -webkit-animation-name: pedalstem-back;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-name: pedalstem-back;
-  -moz-animation-duration: 1s;
-  -moz-animation-timing-function: linear;
-  -moz-animation-iteration-count: infinite;
-  -o-animation-name: pedalstem-back;
-  -o-animation-duration: 1s;
-  -o-animation-timing-function: linear;
-  -o-animation-iteration-count: infinite;
-  animation-name: pedalstem-back;
-  animation-duration: 1s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  -moz-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
   transform: rotate(180deg);
+  -webkit-animation-name: pedalstem-back;
+  -moz-animation-name: pedalstem-back;
+  -o-animation-name: pedalstem-back;
+  animation-name: pedalstem-back;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
 .bike-two .pedalbase.front {
   -webkit-animation-name: pedalbase-front;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
   -moz-animation-name: pedalbase-front;
-  -moz-animation-duration: 1s;
-  -moz-animation-timing-function: linear;
-  -moz-animation-iteration-count: infinite;
   -o-animation-name: pedalbase-front;
-  -o-animation-duration: 1s;
-  -o-animation-timing-function: linear;
-  -o-animation-iteration-count: infinite;
   animation-name: pedalbase-front;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
   animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
   animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 .bike-two .pedalbase.back {
   -webkit-animation-name: pedalbase-back;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
   -moz-animation-name: pedalbase-back;
-  -moz-animation-duration: 1s;
-  -moz-animation-timing-function: linear;
-  -moz-animation-iteration-count: infinite;
   -o-animation-name: pedalbase-back;
-  -o-animation-duration: 1s;
-  -o-animation-timing-function: linear;
-  -o-animation-iteration-count: infinite;
   animation-name: pedalbase-back;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
   animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
   animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 .bike-two .wheel {
   -webkit-animation-name: wheelspin;
-  -webkit-animation-duration: 2s;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
   -moz-animation-name: wheelspin;
-  -moz-animation-duration: 2s;
-  -moz-animation-timing-function: linear;
-  -moz-animation-iteration-count: infinite;
   -o-animation-name: wheelspin;
-  -o-animation-duration: 2s;
-  -o-animation-timing-function: linear;
-  -o-animation-iteration-count: infinite;
   animation-name: wheelspin;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -o-animation-duration: 2s;
   animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
   animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 .bike-two .sit-here {

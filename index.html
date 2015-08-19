@@ -29,7 +29,9 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <title>Forum Nordestino da Bicicleta - 2015</title>
+    <!-- GeoJSON da estrutura cicloviaria -->
     <script src="ciclovias.geojson" type="text/javascript"></script>
+    <script src="ciclofaixas.geojson" type="text/javascript"></script>
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Abel|Lato:400,700|Raleway' rel='stylesheet' type='text/css'>
     <!-- Bootstrap core CSS -->
@@ -126,6 +128,7 @@
     <a id="sobre"></a>
     <!-- sobre -->
     <div class="jumbotron">
+
         <div class="container">
             <h1 class="title">Sobre</h1>
             <p class="lead">Entre os dias <strong>29 de outubro e 01 de novembro</strong> de 2015, no <strong>Ginásio Pernambucano</strong>, em Recife, será realizado, o <strong>I Forum Nordestino da Bicicleta</strong> que trará palestras, oficinas, rodas de discussão, Bike Polo, apresentação de trabalhos academicos e cases de empreedendorismo relacionados com a bicicleta.
@@ -337,10 +340,38 @@
     <a id="inscricoes"></a>
     <!-- inscricoes -->
     <div class="jumbotron" style="margin-bottom: 0px;">
+    <div class="container">
+        <div class="row">
+           <div class="col-xs-12 col-sm-6 col-lg-4">
+
+                        <div class="box">
+                            <div class="icon">
+                                <div class="image"><span class="glyphicon glyphicon-envelope btn-lg black"></span>
+                                </div>
+                                <div class="info">
+                                    <h3 class="title">Newsletter</h3>
+                                    <p>
+                                        As inscrições ainda não foram abertas!<br>
+                                        Quer acompanhar o forum? Cadastre seu email.
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="space"></div>
+                        </div>
+                    </div>
+
+        </div>
+        </div>
+    </div>
+    <div class="jumbotron" style="margin-bottom: 0px;">
         <div class="container">
             <h1 class="title">Inscrições</h1>
             <p class="lead">Ainda vão ser abertas.</p>
             <section class="subscribe">
+
+
+
                 <div class="subscribe-pitch">
                     <p>Cadastre seu email para acompanhar o forum.</p>
                 </div>
@@ -570,13 +601,14 @@
                     <div class="col-xs-12 col-sm-6 col-lg-4">
                         <div class="box">
                             <div class="icon">
-                                <div class="image"><span class="glyphicon glyphicon-bed btn-lg black"></span>
+                                <div class="image"><span class="glyphicon glyphicon-home btn-lg black"></span>
                                 </div>
                                 <div class="info">
                                     <h3 class="title">Hospedagem Voluntária</h3>
                                     <p>
                                         Não tem onde ficar? Alguns recifenses participantes do forum estão abrindo suas casas voluntariamente para hospedar aqueles que vem participar do forum, clique aqui para saber mais.
                                     </p>
+                                                <a href="#modalHost" role="button" class="btn btn-default" data-toggle="modal">Hospedagem solidária!</a>
                                 </div>
                             </div>
                             <div class="space"></div>
@@ -614,7 +646,6 @@
                     </div>
                 </div>
             </div>
-            <a href="#modalHost" role="button" class="btn btn-default" data-toggle="modal"><span class="glyphicon glyphicon-home"></span>Hospedagem solidária!</a>
         </div>
 
 

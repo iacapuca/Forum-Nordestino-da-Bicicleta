@@ -32,13 +32,15 @@ L.marker([-8.05794, -34.87935], {icon: redMarker,}).addTo(map);
 //L.Control
 
 //Camada Cicloviaria
-L.geoJson(ciclovias,{
-    style: function(feature){
-        switch(feature.properties.highway){
-            case 'cycleway': return {color: "red"};
-        }
-    }
+
+L.control.layers({},{
+    'Ciclofaixa': L.geoJson(ciclovias),
+    'Ciclovia': L.geoJson(ciclofaixas)
 }).addTo(map);
+
+
+
+
 
 
 
