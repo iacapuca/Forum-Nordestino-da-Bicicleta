@@ -27,15 +27,45 @@ L.tileLayer('http://{s}.tile.openstreetmap.se/hydda/full/{z}/{x}/{y}.png', {
   });
 
 //L.marker([-8.05794, -34.87935], {}).addTo(map);
-L.marker([-8.05794, -34.87935], {icon: redMarker,}).addTo(map);
+marker = L.marker([-8.05794, -34.87935], {icon: redMarker,}).addTo(map);
 
 //L.Control
 
+marker.bindPopup("Ginásio Pernambucano", {maxWidth: "none"})
+
+
 //Camada Cicloviaria
 
+var ciclofaixa_movel_style = {
+    "color": "#ff7800",
+    "weight": 5,
+    "opacity": 0.65
+};
+
+var ciclovia_style = {
+    "color": "#ff0000",
+    "weight": 5,
+    "opacity": 0.65
+};
+
+var ciclofaixa_style = {
+    "color": "#fff500",
+    "weight": 5,
+    "opacity": 0.65
+};
+
+var ciclorrota_style = {
+    "color": "#fffb8a",
+    "weight": 5,
+    "opacity": 0.65
+};
+
+
 L.control.layers({},{
-    'Ciclofaixa': L.geoJson(ciclovias),
-    'Ciclovia': L.geoJson(ciclofaixas)
+    'Ciclofaixa Movel': L.geoJson(ciclofaixa_movel, { style: ciclofaixa_movel_style}),
+    'Ciclovia': L.geoJson(ciclovias, { style: ciclovia_style}),
+    'Ciclofaixa': L.geoJson(ciclofaixa, { style: ciclofaixa_style}),
+    'Ciclorrota': L.geoJson(ciclorrota, { style: ciclorrota_style})
 }).addTo(map);
 
 
