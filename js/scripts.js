@@ -39,7 +39,9 @@ marker.bindPopup("Ginásio Pernambucano", {maxWidth: "none"})
 var ciclofaixa_movel_style = {
     "color": "#ff7800",
     "weight": 5,
-    "opacity": 0.65
+    "opacity": 0.65,
+    "dashArray": '5,10',
+    "lineJoin": 'round'
 };
 
 var ciclovia_style = {
@@ -51,7 +53,7 @@ var ciclovia_style = {
 var ciclofaixa_style = {
     "color": "#fff500",
     "weight": 5,
-    "opacity": 0.65
+    "opacity": 0.65,
 };
 
 var ciclorrota_style = {
