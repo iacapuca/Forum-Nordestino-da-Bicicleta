@@ -51,6 +51,7 @@
     background: #e8f8f5;
 }
 
+
 .cbp_tmtimeline>li:nth-child(odd) .cbp_tmlabel {
     background: #f9f9f9;
 }
@@ -58,6 +59,7 @@
 .cbp_tmtimeline>li .cbp_tmlabel h2 span {
     display: block;
     text-align:left;
+    margin-left: -9px;
     color: #999;
     text-transform: none;
     font-size: 18px;
