@@ -607,6 +607,7 @@ button.expand:hover {
 .box > .icon > .info > p {
     color: #666;
     line-height: 1.5em;
+    
     margin: 20px;
 }
 
@@ -625,3 +626,10 @@ button.expand:hover {
 .secao span {
     padding: 10px;
 }
+
+.cbp_tmlabel p{
+            text-align: left;
+
+}
+
+
