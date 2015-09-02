@@ -12,7 +12,7 @@
     left: 20%;
     margin-left: -10px;
     width: 10px;
-    background: #ff6583;
+    background: #FFEC9E;
     content: '';
 }
 
@@ -100,15 +100,15 @@
     height: 48px;
     border-radius: 50%;
     background: #fff;
-    box-shadow: 0 0 0 5px #1abc9c;
-    color: #1abc9c;
+    box-shadow: 0 0 0 5px #DADADB;
+    color: #000000;
     text-align: center;
     text-transform: none;
     font-weight: normal;
     font-style: normal;
+    font-family: FontAwesome;
     font-variant: normal;
     font-size: 24px;
-    font-family: 'fontello';
     line-height: 48px;
 
     speak: none;
@@ -116,7 +116,16 @@
 }
 
 .timeline_icon_audio:before {
-    content: "\e87d";
+    content: "\f000";
+}
+.timeline_icon_bike:before {
+    content: "\f206";
+}
+.timeline_icon_filme:before {
+    content: "\f03d";
+}
+.timeline_icon_paper:before {
+    content: "\f145";
 }
 
 .timeline_icon_doc:before {
@@ -127,8 +136,8 @@
     content: "\e812";
 }
 
-.timeline_icon_test:before {
-    content: "\e9ab";
+.timeline_icon_day:before {
+    content: "\f073";
 }
 
 .timeline_icon_break:before {
