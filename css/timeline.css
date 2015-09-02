@@ -71,7 +71,8 @@
     text-align: left;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     text-transform: uppercase;
-    font-size: 26px;
+    font-size: 20px;
+    font-family: Raleway;
 }
 
 .cbp_tmtimeline>li .cbp_tmlabel:after {
@@ -116,7 +117,28 @@
 }
 
 .timeline_icon_audio:before {
-    content: "\f000";
+    content: "\f0c0";
+} 
+.timeline_icon_test:before {
+    content: "\f253";
+} 
+.timeline_icon_interv:before {
+    content: "\f0f4";
+}  
+.timeline_icon_music:before {
+    content: "\f001";
+} 
+.timeline_icon_share:before {
+    content: "\f0a1";
+}  
+.timeline_icon_talk:before {
+    content: "\f075 ";
+} 
+.timeline_icon_dialog:before {
+    content: "\f086";
+}
+.timeline_icon_map:before {
+    content: "\f041";
 }
 .timeline_icon_bike:before {
     content: "\f206";
