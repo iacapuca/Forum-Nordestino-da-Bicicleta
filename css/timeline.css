@@ -167,6 +167,18 @@ font-weight:800;
 .timeline_icon_audio:before {
     content: "\f0c0";
 } 
+.timeline_icon_time:before {
+    content: "\F017";
+}  
+.timeline_icon_mulher:before {
+    content: "\f182";
+} 
+.timeline_icon_money:before {
+    content: "\f0d6";
+}  
+.timeline_icon_livro:before {
+    content: "\f02d";
+} 
 .timeline_icon_test:before {
     content: "\f253";
 } 

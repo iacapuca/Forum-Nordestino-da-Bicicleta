@@ -113,3 +113,8 @@ $(document).on('click', '.navbar-collapse.in', function (e) {
     }
 
 });
+
+// Modal
+if(window.location.href.indexOf('#modalTrabalhos') != -1) {
+    $('#modalTrabalhos').modal('show');
+  };
