@@ -650,6 +650,8 @@ button.expand:hover {
       width: 48%;
     height: 250px;
     float: right;
+        border-left: 1px solid #EBF4F7;
+    padding-left: 15px;
     z-index: 1;
     /* position: absolute; */
     clear: both;
