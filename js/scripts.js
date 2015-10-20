@@ -9,7 +9,7 @@ $('.smooth-scroll').smoothScroll({
 
 //Map
 // create a map in the "map" div, set the view to a given place and zoom
-var map = L.map('map').setView([-8.05794, -34.87935], 16);
+var map = L.map('map').setView([-8.06227, -34.87069], 16);
 var Hydda_Full = L.tileLayer('http://{s}.tile.openstreetmap.se/hydda/full/{z}/{x}/{y}.png', {
     attribution: 'Tiles courtesy of <a href="http://openstreetmap.se/" target="_blank">OpenStreetMap Sweden</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 });
@@ -27,13 +27,13 @@ var redMarker = L.ExtraMarkers.icon({
 });
 
 //L.marker([-8.05794, -34.87935], {}).addTo(map);
-marker = L.marker([-8.05794, -34.87935], {
+marker = L.marker([-8.06227, -34.87069], {
     icon: redMarker,
 }).addTo(map);
 
 //L.Control
 
-marker.bindPopup("Ginásio Pernambucano", {
+marker.bindPopup("Centro de Artesanato de Pernambuco", {
     maxWidth: "none"
 })
 
@@ -118,3 +118,8 @@ $(document).on('click', '.navbar-collapse.in', function (e) {
 if(window.location.href.indexOf('#modalTrabalhos') != -1) {
     $('#modalTrabalhos').modal('show');
   };
+
+// Hover
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
